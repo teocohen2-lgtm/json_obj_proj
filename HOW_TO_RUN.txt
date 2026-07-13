@@ -1,0 +1,24 @@
+MINIMUM INPUT QUOTE GENERATOR — EXACT PAYLOAD VERSION
+
+1. Run:
+   pip install -r requirements.txt
+   python app.py
+
+2. Open:
+   http://127.0.0.1:5000
+
+IMPORTANT FIXES
+- The complete original account/policy schema is retained.
+- Null and empty-string keys are retained.
+- Only policy.line.risk is generated dynamically.
+- Member count controls the exact number of risk objects.
+- The first risk member matches the account name, DOB, gender and salutation.
+- FamilyType is generated as 1A, 2A, 2A+1C, etc.
+- All 15 coverage objects remain present.
+- Selected coverage gets Indicator "1"; unselected coverage gets "0".
+- SequenceID is created automatically.
+
+DATE FIELDS
+- Proposal Date and Effective Date are required on the webpage.
+- Their entered YYYY-MM-DD values are written directly into policy.ProposalDate and policy.EffectiveDate.
+- Placeholder values such as {{ProposalDate}} and {{EffectiveDate}} are no longer generated.

@@ -1,0 +1,909 @@
+<!-- <!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Minimum Input Quote Generator</title>
+    <style>
+      :root {
+        --bg: #06111f;
+        --card: #0d1c2e;
+        --line: #24415f;
+        --cyan: #33d6ff;
+        --text: #edf7ff;
+        --muted: #9db3c8;
+      }
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        background: linear-gradient(135deg, #03101d, #09192b);
+        color: var(--text);
+        font-family: Arial, sans-serif;
+      }
+      .wrap {
+        max-width: 1350px;
+        margin: 28px auto;
+        padding: 18px;
+      }
+      .hero {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 18px;
+      }
+      h1 {
+        margin: 0;
+        color: var(--cyan);
+      }
+      .sub {
+        color: var(--muted);
+      }
+      .grid {
+        display: grid;
+        grid-template-columns: 430px 1fr;
+        gap: 18px;
+      }
+      .card {
+        background: rgba(13, 28, 46, 0.95);
+        border: 1px solid var(--line);
+        border-radius: 18px;
+        padding: 20px;
+        box-shadow: 0 18px 50px #0007;
+      }
+      .section {
+        border-top: 1px solid var(--line);
+        padding-top: 16px;
+        margin-top: 16px;
+      }
+      label {
+        display: block;
+        font-size: 13px;
+        color: var(--muted);
+        margin: 9px 0 5px;
+      }
+      input,
+      select {
+        width: 100%;
+        padding: 11px;
+        border-radius: 9px;
+        border: 1px solid #315474;
+        background: #06111f;
+        color: #fff;
+      }
+      .row {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+      }
+      .coverages {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 7px;
+        max-height: 260px;
+        overflow: auto;
+      }
+      .check {
+        display: flex;
+        gap: 8px;
+        align-items: center;
+        background: #091827;
+        padding: 8px;
+        border-radius: 8px;
+        font-size: 12px;
+      }
+      .check input {
+        width: auto;
+      }
+      .actions {
+        display: flex;
+        gap: 9px;
+        flex-wrap: wrap;
+        margin-top: 16px;
+      }
+      button {
+        border: 0;
+        border-radius: 10px;
+        padding: 11px 15px;
+        font-weight: 700;
+        cursor: pointer;
+        background: #1fc7b6;
+        color: #03201d;
+      }
+      .secondary {
+        background: #1a3047;
+        color: #fff;
+      }
+      .members {
+        display: grid;
+        gap: 10px;
+      }
+      .member {
+        background: #091827;
+        border: 1px solid #1f3a56;
+        border-radius: 12px;
+        padding: 12px;
+      }
+      .member-grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 8px;
+      }
+      .member h4 {
+        margin: 0 0 8px;
+        color: #7ee8ff;
+      }
+      pre {
+        margin: 0;
+        background: #020914;
+        border-radius: 12px;
+        padding: 16px;
+        max-height: 760px;
+        overflow: auto;
+        white-space: pre-wrap;
+        word-break: break-word;
+        font-size: 12px;
+      }
+      .status {
+        color: #72f0c8;
+        margin-top: 10px;
+      }
+      @media (max-width: 900px) {
+        .grid {
+          grid-template-columns: 1fr;
+        }
+        .member-grid {
+          grid-template-columns: 1fr 1fr;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <div class="hero">
+        <div>
+          <h1>Create Quote Scenario</h1>
+          <div class="sub">
+            Minimum input → dynamic family members → selected coverage
+            indicators → complete JSON
+          </div>
+        </div>
+      </div>
+      <div class="grid">
+        <div class="card">
+          <div class="row">
+            <div>
+              <label>Member count</label
+              ><select id="memberCount">
+                {% for n in range(1,9) %}
+                <option>{{n}}</option>
+                {% endfor %}
+              </select>
+            </div>
+            <div>
+              <label>Policy Type</label>
+              <select id="policyType">
+                <option value="Floater" selected>Floater</option>
+
+                <option value="Individual">Individual</option>
+              </select>
+            </div>
+            <div>
+              <label>Proposer gender</label
+              ><select id="gender">
+                <option value="M">Male</option>
+                <option value="F">Female</option>
+              </select>
+            </div>
+          </div>
+          <div class="row">
+            <div>
+              <label>Sum insured</label
+              ><select id="sumInsured">
+                <option>500000</option>
+                <option selected>1000000</option>
+                <option>2000000</option>
+                <option>5000000</option>
+              </select>
+            </div>
+            <div>
+              <label>Plan</label
+              ><select id="plan">
+                <option>OptimaSecure</option>
+                <option>OptimaRestore</option>
+                <option>MyHealthSuraksha</option>
+              </select>
+            </div>
+          </div>
+          <div class="row">
+            <div>
+              <label>Proposal Date</label
+              ><input id="proposalDate" type="date" required />
+            </div>
+            <div>
+              <label>Effective Date</label
+              ><input id="effectiveDate" type="date" required />
+            </div>
+          </div>
+          <div class="section">
+            <h3>Prefilled account data</h3>
+            <label>Name</label><input id="name" value="SAKUNTHALA P" />
+            <div class="row">
+              <div>
+                <label>DOB</label
+                ><input id="dob" type="date" value="1987-09-07" />
+              </div>
+              <div><label>PAN</label><input id="pan" value="CYUPS5288Q" /></div>
+            </div>
+            <div class="row">
+              <div>
+                <label>Mobile</label><input id="mobile" value="9930247107" />
+              </div>
+              <div>
+                <label>Email</label><input id="email" value="ub@hdfcergo.com" />
+              </div>
+            </div>
+            <label>Address</label
+            ><input
+              id="address"
+              value="Houseno.61, Mothe Nagaon, Mumbai, 400010, Maharashtra"
+            />
+          </div>
+          <div class="section">
+            <h3>Select coverages</h3>
+            <div class="coverages">
+              {% for c in coverages %}<label class="check"
+                ><input type="checkbox" value="{{c}}" class="cov" {% if c in
+                ['MyHealthHospitalCashBenefit','UnlimitedRestoreRider','AggregateDeductible','ABCD']
+                %}checked{% endif %}>{{c}}</label
+              >{% endfor %}
+            </div>
+          </div>
+          <div class="actions">
+            <button onclick="createFamily()">Create Random Family</button
+            ><button class="secondary" onclick="generateJson()">
+              Generate JSON</button
+            ><button class="secondary" onclick="downloadJson()">
+              Download JSON
+            </button>
+            <button type="button" class="secondary" onclick="copyJson()">
+              📋 Copy JSON
+            </button>
+          </div>
+          <div class="status" id="status"></div>
+        </div>
+        <div>
+          <div class="card" style="margin-bottom: 18px">
+            <h3>Generated members — editable</h3>
+            <div id="members" class="members"></div>
+          </div>
+          <div class="card">
+            <h3>JSON output</h3>
+            <pre id="output">
+Click “Create Random Family”, edit anything you want, then generate JSON.</pre
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      let lastPayload = null;
+      function base() {
+        return {
+          member_count: +memberCount.value,
+          gender: gender.value,
+          sum_insured: sumInsured.value,
+          plan: plan.value,
+          proposal_date: proposalDate.value,
+          effective_date: effectiveDate.value,
+          name: name.value,
+          dob: dob.value,
+          pan: pan.value,
+          policy_type: policyType.value,
+          mobile: mobile.value,
+          email: email.value,
+          address: address.value,
+          coverages: [...document.querySelectorAll(".cov:checked")].map(
+            (x) => x.value
+          ),
+        };
+      }
+      async function createFamily() {
+        let r = await fetch("/api/random-family", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(base()),
+        });
+        let d = await r.json();
+        renderMembers(d.members);
+        status.textContent = `${d.members.length} dynamic members created.`;
+      }
+      function renderMembers(ms) {
+        members.innerHTML = ms
+          .map(
+            (m, i) =>
+              `<div class="member" data-seq="${i + 1}"><h4>Member ${
+                i + 1
+              }</h4><div class="member-grid"><div><label>Relationship</label><select class="relation">{% for r in relations %}<option value="{{r}}">{{r}}</option>{% endfor %}</select></div><div><label>Name</label><input class="mname" value="${
+                m.InsuredName
+              }"></div><div><label>DOB</label><input class="mdob" type="date" value="${
+                m.MemberDOB
+              }"></div><div><label>Gender</label><select class="mgender"><option value="M">M</option><option value="F">F</option></select></div><div><label>Height</label><input class="height" value="${
+                m.Height
+              }"></div><div><label>Weight</label><input class="weight" value="${
+                m.Weight
+              }"></div><div><label>Salutation</label><input class="salutation" value="${
+                m.Salutation
+              }"></div><div><label>Sum insured</label><input class="msum" value="${
+                m.SumInsured
+              }"></div></div></div>`
+          )
+          .join("");
+        [...document.querySelectorAll(".member")].forEach((el, i) => {
+          el.querySelector(".relation").value = ms[i].RelationshipWithProposer;
+          el.querySelector(".mgender").value = ms[i].Gender;
+        });
+      }
+      function memberData() {
+        return [...document.querySelectorAll(".member")].map((el, i) => ({
+          SequenceID: String(i + 1),
+          RelationshipWithProposer: el.querySelector(".relation").value,
+          InsuredName: el.querySelector(".mname").value,
+          MemberDOB: el.querySelector(".mdob").value,
+          Gender: el.querySelector(".mgender").value,
+          Height: el.querySelector(".height").value,
+          Weight: el.querySelector(".weight").value,
+          Salutation: el.querySelector(".salutation").value,
+          SumInsured: el.querySelector(".msum").value,
+          IsProposerInsured: i === 0 ? "1" : "0",
+        }));
+      }
+      async function generateJson() {
+        if (!proposalDate.value || !effectiveDate.value) {
+          status.textContent =
+            "Please enter both Proposal Date and Effective Date.";
+          return false;
+        }
+        if (effectiveDate.value < proposalDate.value) {
+          status.textContent =
+            "Effective Date cannot be earlier than Proposal Date.";
+          return false;
+        }
+        if (!document.querySelector(".member")) await createFamily();
+        let d = base();
+        d.relationships = memberData().map((x) => x.RelationshipWithProposer);
+        d.members = memberData();
+        let r = await fetch("/api/generate", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(d),
+        });
+        lastPayload = await r.json();
+        output.textContent = JSON.stringify(lastPayload, null, 2);
+        status.textContent = `JSON created with ${d.member_count} risk objects.`;
+        return true;
+      }
+      async function downloadJson() {
+        if (!lastPayload) {
+          const created = await generateJson();
+          if (!created) return;
+        }
+        let r = await fetch("/download", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(lastPayload),
+        });
+        let b = await r.blob(),
+          a = document.createElement("a");
+        a.href = URL.createObjectURL(b);
+        a.download = "quote_scenario.json";
+        a.click();
+        URL.revokeObjectURL(a.href);
+      }
+      memberCount.addEventListener("change", createFamily);
+      gender.addEventListener("change", createFamily);
+      createFamily();
+    </script>
+    <script>
+      async function copyJson() {
+        const jsonText = document.getElementById("output").textContent;
+
+        if (!jsonText || jsonText.includes("Click")) {
+          alert("Generate JSON first.");
+          return;
+        }
+
+        try {
+          await navigator.clipboard.writeText(jsonText);
+
+          status.textContent = "✅ JSON copied successfully!";
+        } catch (err) {
+          const textarea = document.createElement("textarea");
+
+          textarea.value = jsonText;
+
+          document.body.appendChild(textarea);
+
+          textarea.select();
+
+          document.execCommand("copy");
+
+          document.body.removeChild(textarea);
+
+          status.textContent = "✅ JSON copied successfully!";
+        }
+      }
+
+      policyType.addEventListener("change", function () {
+        if (this.value === "Individual") {
+          memberCount.value = 1;
+
+          memberCount.disabled = true;
+        } else {
+          memberCount.disabled = false;
+        }
+
+        createFamily();
+      });
+    </script>
+  </body>
+</html> -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Minimum Input Quote Generator</title>
+    <style>
+      :root {
+        --bg: #06111f;
+        --card: #0d1c2e;
+        --line: #24415f;
+        --cyan: #33d6ff;
+        --text: #edf7ff;
+        --muted: #9db3c8;
+      }
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        background: linear-gradient(135deg, #03101d, #09192b);
+        color: var(--text);
+        font-family: Arial, sans-serif;
+      }
+      .wrap {
+        max-width: 1350px;
+        margin: 28px auto;
+        padding: 18px;
+      }
+      .hero {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 18px;
+      }
+      h1 {
+        margin: 0;
+        color: var(--cyan);
+      }
+      .sub {
+        color: var(--muted);
+      }
+      .grid {
+        display: grid;
+        grid-template-columns: 430px 1fr;
+        gap: 18px;
+      }
+      .card {
+        background: rgba(13, 28, 46, 0.95);
+        border: 1px solid var(--line);
+        border-radius: 18px;
+        padding: 20px;
+        box-shadow: 0 18px 50px #0007;
+      }
+      .section {
+        border-top: 1px solid var(--line);
+        padding-top: 16px;
+        margin-top: 16px;
+      }
+      label {
+        display: block;
+        font-size: 13px;
+        color: var(--muted);
+        margin: 9px 0 5px;
+      }
+      input,
+      select {
+        width: 100%;
+        padding: 11px;
+        border-radius: 9px;
+        border: 1px solid #315474;
+        background: #06111f;
+        color: #fff;
+      }
+      .row {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+      }
+      .coverages {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 7px;
+        max-height: 260px;
+        overflow: auto;
+      }
+      .check {
+        display: flex;
+        gap: 8px;
+        align-items: center;
+        background: #091827;
+        padding: 8px;
+        border-radius: 8px;
+        font-size: 12px;
+      }
+      .check input {
+        width: auto;
+      }
+      .actions {
+        display: flex;
+        gap: 9px;
+        flex-wrap: wrap;
+        margin-top: 16px;
+      }
+      button {
+        border: 0;
+        border-radius: 10px;
+        padding: 11px 15px;
+        font-weight: 700;
+        cursor: pointer;
+        background: #1fc7b6;
+        color: #03201d;
+      }
+      .secondary {
+        background: #1a3047;
+        color: #fff;
+      }
+      .members {
+        display: grid;
+        gap: 10px;
+      }
+      .member {
+        background: #091827;
+        border: 1px solid #1f3a56;
+        border-radius: 12px;
+        padding: 12px;
+      }
+      .member-grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 8px;
+      }
+      .member h4 {
+        margin: 0 0 8px;
+        color: #7ee8ff;
+      }
+      pre {
+        margin: 0;
+        background: #020914;
+        border-radius: 12px;
+        padding: 16px;
+        max-height: 760px;
+        overflow: auto;
+        white-space: pre-wrap;
+        word-break: break-word;
+        font-size: 12px;
+      }
+      .status {
+        color: #72f0c8;
+        margin-top: 10px;
+      }
+      @media (max-width: 900px) {
+        .grid {
+          grid-template-columns: 1fr;
+        }
+        .member-grid {
+          grid-template-columns: 1fr 1fr;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <div class="hero">
+        <div>
+          <h1>Create Quote Scenario</h1>
+          <div class="sub">
+            Minimum input → dynamic family members → selected coverage
+            indicators → complete JSON
+          </div>
+        </div>
+      </div>
+      <div class="grid">
+        <div class="card">
+          <div class="row">
+            <div>
+              <label>Policy Type</label>
+              <select id="policyType">
+                <option value="Floater" selected>Floater</option>
+                <option value="Individual">Individual</option>
+              </select>
+            </div>
+            <div>
+              <label>Proposer gender</label>
+              <select id="gender">
+                <option value="M">Male</option>
+                <option value="F">Female</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="section">
+            <h3>Member composition</h3>
+            <label>Family Type</label>
+            <select id="familyType">
+              {% for family_type in family_types %}
+              <option value="{{ family_type }}"
+                {% if family_type == '2A' %}selected{% endif %}>
+                {{ family_type }}
+              </option>
+              {% endfor %}
+            </select>
+            <div class="sub" style="margin-top: 7px">
+              A = Adult and C = Child. Policy Type does not restrict member count.
+            </div>
+          </div>
+          <div class="row">
+            <div>
+              <label>Sum insured</label
+              ><select id="sumInsured">
+                <option>500000</option>
+                <option selected>1000000</option>
+                <option>2000000</option>
+                <option>5000000</option>
+              </select>
+            </div>
+            <div>
+              <label>Plan</label
+              ><select id="plan">
+                <option>OptimaSecure</option>
+                <option>OptimaRestore</option>
+                <option>MyHealthSuraksha</option>
+              </select>
+            </div>
+          </div>
+          <div class="row">
+            <div>
+              <label>Proposal Date</label
+              ><input id="proposalDate" type="date" required />
+            </div>
+            <div>
+              <label>Effective Date</label
+              ><input id="effectiveDate" type="date" required />
+            </div>
+          </div>
+          <div class="section">
+            <h3>Prefilled account data</h3>
+            <label>Name</label><input id="name" value="SAKUNTHALA P" />
+            <div class="row">
+              <div>
+                <label>DOB</label
+                ><input id="dob" type="date" value="1987-09-07" />
+              </div>
+              <div><label>PAN</label><input id="pan" value="CYUPS5288Q" /></div>
+            </div>
+            <div class="row">
+              <div>
+                <label>Mobile</label><input id="mobile" value="9930247107" />
+              </div>
+              <div>
+                <label>Email</label><input id="email" value="ub@hdfcergo.com" />
+              </div>
+            </div>
+            <label>Address</label
+            ><input
+              id="address"
+              value="Houseno.61, Mothe Nagaon, Mumbai, 400010, Maharashtra"
+            />
+          </div>
+          <div class="section">
+            <h3>Select coverages</h3>
+            <div class="coverages">
+              {% for c in coverages %}<label class="check"
+                ><input type="checkbox" value="{{c}}" class="cov" {% if c in
+                ['MyHealthHospitalCashBenefit','UnlimitedRestoreRider','AggregateDeductible','ABCD']
+                %}checked{% endif %}>{{c}}</label
+              >{% endfor %}
+            </div>
+          </div>
+          <div class="actions">
+            <button onclick="createFamily()">Create Random Family</button
+            ><button class="secondary" onclick="generateJson()">
+              Generate JSON</button
+            ><button class="secondary" onclick="downloadJson()">
+              Download JSON
+            </button>
+            <button type="button" onclick="copyJson()">📋 Copy JSON</button>
+          </div>
+          <div class="status" id="status"></div>
+        </div>
+        <div>
+          <div class="card" style="margin-bottom: 18px">
+            <h3>Generated members — editable</h3>
+            <div id="members" class="members"></div>
+          </div>
+          <div class="card">
+            <h3>JSON output</h3>
+            <pre id="output">
+Click “Create Random Family”, edit anything you want, then generate JSON.</pre
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      let lastPayload = null;
+
+      function memberCountFromFamilyType() {
+        const value = familyType.value;
+        const match = value.match(/^(\d+)A(?:\+(\d+)C)?$/);
+
+        if (!match) return 1;
+
+        const adults = Number(match[1]);
+        const children = Number(match[2] || 0);
+
+        return adults + children;
+      }
+
+      function base() {
+        return {
+          member_count: memberCountFromFamilyType(),
+          policy_type: policyType.value,
+          family_type: familyType.value,
+          gender: gender.value,
+          sum_insured: sumInsured.value,
+          plan: plan.value,
+          proposal_date: proposalDate.value,
+          effective_date: effectiveDate.value,
+          name: name.value,
+          dob: dob.value,
+          pan: pan.value,
+          mobile: mobile.value,
+          email: email.value,
+          address: address.value,
+          coverages: [...document.querySelectorAll(".cov:checked")].map(
+            (x) => x.value
+          ),
+        };
+      }
+      async function createFamily() {
+        let r = await fetch("/api/random-family", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(base()),
+        });
+        let d = await r.json();
+        renderMembers(d.members);
+        status.textContent = `${d.members.length} members created for ${familyType.value}.`;
+      }
+      function renderMembers(ms) {
+        members.innerHTML = ms
+          .map(
+            (m, i) =>
+              `<div class="member" data-seq="${i + 1}"><h4>Member ${
+                i + 1
+              }</h4><div class="member-grid"><div><label>Relationship</label><select class="relation">{% for r in relations %}<option value="{{r}}">{{r}}</option>{% endfor %}</select></div><div><label>Name</label><input class="mname" value="${
+                m.InsuredName
+              }"></div><div><label>DOB</label><input class="mdob" type="date" value="${
+                m.MemberDOB
+              }"></div><div><label>Gender</label><select class="mgender"><option value="M">M</option><option value="F">F</option></select></div><div><label>Height</label><input class="height" value="${
+                m.Height
+              }"></div><div><label>Weight</label><input class="weight" value="${
+                m.Weight
+              }"></div><div><label>Salutation</label><input class="salutation" value="${
+                m.Salutation
+              }"></div><div><label>Sum insured</label><input class="msum" value="${
+                m.SumInsured
+              }"></div></div></div>`
+          )
+          .join("");
+        [...document.querySelectorAll(".member")].forEach((el, i) => {
+          el.querySelector(".relation").value = ms[i].RelationshipWithProposer;
+          el.querySelector(".mgender").value = ms[i].Gender;
+        });
+      }
+      function memberData() {
+        return [...document.querySelectorAll(".member")].map((el, i) => ({
+          SequenceID: String(i + 1),
+          RelationshipWithProposer: el.querySelector(".relation").value,
+          InsuredName: el.querySelector(".mname").value,
+          MemberDOB: el.querySelector(".mdob").value,
+          Gender: el.querySelector(".mgender").value,
+          Height: el.querySelector(".height").value,
+          Weight: el.querySelector(".weight").value,
+          Salutation: el.querySelector(".salutation").value,
+          SumInsured: el.querySelector(".msum").value,
+          IsProposerInsured: i === 0 ? "1" : "0",
+        }));
+      }
+      async function generateJson() {
+        if (!proposalDate.value || !effectiveDate.value) {
+          status.textContent =
+            "Please enter both Proposal Date and Effective Date.";
+          return false;
+        }
+        if (effectiveDate.value < proposalDate.value) {
+          status.textContent =
+            "Effective Date cannot be earlier than Proposal Date.";
+          return false;
+        }
+        if (!document.querySelector(".member")) await createFamily();
+        let d = base();
+        d.relationships = memberData().map((x) => x.RelationshipWithProposer);
+        d.members = memberData();
+        let r = await fetch("/api/generate", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(d),
+        });
+        lastPayload = await r.json();
+        output.textContent = JSON.stringify(lastPayload, null, 2);
+        status.textContent = `JSON created with ${d.member_count} risk objects.`;
+        return true;
+      }
+      async function downloadJson() {
+        if (!lastPayload) {
+          const created = await generateJson();
+          if (!created) return;
+        }
+        let r = await fetch("/download", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(lastPayload),
+        });
+        let b = await r.blob(),
+          a = document.createElement("a");
+        a.href = URL.createObjectURL(b);
+        a.download = "quote_scenario.json";
+        a.click();
+        URL.revokeObjectURL(a.href);
+      }
+      familyType.addEventListener("change", createFamily);
+      gender.addEventListener("change", createFamily);
+      policyType.addEventListener("change", () => {
+        status.textContent = `Policy Type changed to ${policyType.value}. Member composition remains ${familyType.value}.`;
+      });
+      createFamily();
+    </script>
+    <script>
+      async function copyJson() {
+        if (!lastPayload) {
+          const created = await generateJson();
+          if (!created) return;
+        }
+
+        const jsonText = JSON.stringify(lastPayload, null, 2);
+
+        try {
+          await navigator.clipboard.writeText(jsonText);
+          status.textContent = "✅ JSON copied successfully!";
+        } catch (error) {
+          const textarea = document.createElement("textarea");
+          textarea.value = jsonText;
+          textarea.style.position = "fixed";
+          textarea.style.opacity = "0";
+          document.body.appendChild(textarea);
+          textarea.focus();
+          textarea.select();
+          document.execCommand("copy");
+          textarea.remove();
+          status.textContent = "✅ JSON copied successfully!";
+        }
+      }
+    </script>
+  </body>
+</html>
