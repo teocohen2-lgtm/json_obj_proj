@@ -429,6 +429,8 @@
 from flask import Flask, render_template, request, send_file
 from datetime import date, timedelta
 import json, random, tempfile, re
+import os
+
 
 app = Flask(__name__)
 
@@ -912,5 +914,17 @@ def download():
     json.dump(payload, f, indent=2, ensure_ascii=False); f.close()
     return send_file(f.name, as_attachment=True, download_name='quote_scenario.json')
 
-if __name__ == '__main__':
-    app.run(debug=True)
+# if __name__ == '__main__':
+#     app.run(debug=True)
+
+
+if __name__ == "__main__":
+    app.run(
+        host="0.0.0.0",
+        port=int(
+            os.environ.get(
+                "PORT",
+                5000
+            )
+        )
+    )
