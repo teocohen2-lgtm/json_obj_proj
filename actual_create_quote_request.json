@@ -1,0 +1,257 @@
+{
+  "session": {
+    "@clientId": "",
+    "@id": "",
+    "data": {
+      "InstallmentSchedule": {
+        "ProvidePayPlan": "1"
+      },
+      "account": {
+        "AnnualIncome": "15-20Lacs",
+        "CISAcknowledgement": "No",
+        "CKYCNumber": "",
+        "CriminalProceedingDetails": null,
+        "CriminalProceedingInPast3Years": "0",
+        "DOBAsPerPehchaan": "1987-09-07",
+        "DateOfBirth": "1987-09-07",
+        "Education": "PostGraduate",
+        "FirstName": "SAKUNTHALA",
+        "Gender": "M",
+        "IndustryType": "",
+        "InvestableAssets": "0",
+        "IsPermanentAddressSameAsCorrespondence": "0",
+        "LimitMoreThanFiveLakhs": "0",
+        "LimitMoreThanTwoLakhs": "0",
+        "MaritalStatus": "S",
+        "MiddleName": "",
+        "NRIDiscount": "0",
+        "Name": "P",
+        "NameAsPerPehchaanID": "SAKUNTHALAP",
+        "Nationality": "INDI",
+        "Occupation": "231",
+        "OtherEducation": "",
+        "OtherIndustryType": "",
+        "PANNumber": "CYUPS5288Q",
+        "PartyType": "P",
+        "PehchaanID": "UC4VNKAALM",
+        "PehchaanIDStatus": "approved",
+        "PhysicalPolicyCopyrequired": "0",
+        "PoliticallyExposed": "0",
+        "ResidentialStatus": "ResidentIndian",
+        "Salutation": "MR",
+        "SourceOfFunds": null,
+        "SourceOfIncome": "",
+        "TypeOfBusiness": "Intermediary",
+        "address": {
+          "Correspondence": {
+            "Address1": "Houseno. 61",
+            "Address2": "Mothe Nagaon",
+            "Address3": "Near Ganesh Mandir",
+            "City": "Mumbai",
+            "Pincode": "400010",
+            "State": "MHIN"
+          },
+          "Permanent": {
+            "Address1": "Houseno.61",
+            "Address2": "MotheNagaon",
+            "Address3": "NearGaneshMandir",
+            "City": "Mumbai",
+            "Pincode": "400010",
+            "State": "MHIN"
+          }
+        },
+        "communication": {
+          "EmailId": "ub@hdfcergo.com",
+          "Mobile": "9930247107"
+        },
+        "intermediarydetails": {
+          "SP_PospCode": null
+        },
+        "kyc": {
+          "IsKYCVerified": "1"
+        },
+        "nominee": {
+          "Address": "Houseno.61, Mothe Nagaon, Mumbai, 400010, Maharashtra",
+          "AddressSameAsProposer": "Yes",
+          "NomineeAge": "36.00",
+          "NomineeDOB": "1989-06-24",
+          "NomineeName": "Nisha Patil",
+          "NomineeRelationship": "Wife"
+        },
+        "refunddetails": {
+          "BankAccountNumber": "178293738399",
+          "BankName": "ICICIBANKLIMITED",
+          "BranchName": "ERNAKULAMCOCHIN",
+          "ChequeAmount": null,
+          "IFSCCode": "ICIC0000010",
+          "NameAsInBankAccount": "SAKUNTHALAP"
+        }
+      },
+      "newquoteselection": {
+        "Intermediary": "200798503757",
+        "Vertical": "101011000"
+      },
+      "policy": {
+        "ChildSplitFlag": "0",
+        "EMI": "0",
+        "EffectiveDate": "2025-07-30",
+        "EffectiveTime": "03:30PM",
+        "FamilyType": "1A",
+        "InstallmentFrequencyOpted": "HEGI_ACT_P1",
+        "IsEmployeeDiscountApplicable": "0",
+        "IsLoyaltyDiscountApplicable": "1",
+        "IsProposal": "0",
+        "OriginatingSystem": "1UP",
+        "Plan": "OptimaSecure",
+        "PolicyType": "Individual",
+        "Product": "OptimaSecure",
+        "ProposalDate": "2025-07-30",
+        "SuppressEmailSMS": "1",
+        "Term": "24",
+        "TransactionType": "New",
+        "UserID": "AKSHAY.JAINPOS",
+        "bancassurance": {
+          "BankBranchID": null,
+          "CustomerID": null,
+          "Funded": "0",
+          "LCCode": null,
+          "LGCode": null,
+          "LOSCode": null,
+          "LosNoLanAan": null,
+          "SavingBankAccount": null
+        },
+        "line": {
+          "risk": [
+            {
+              "Questions": {
+                "MedicalQuestions": {
+                  "LifeStyleQ": {
+                    "Lifestylehabits": "0"
+                  },
+                  "Primary": [
+                    {
+                      "Id": "ADD",
+                      "Indicator": "0"
+                    },
+                    {
+                      "Id": "SG",
+                      "Indicator": "0"
+                    },
+                    {
+                      "Id": "MR",
+                      "Indicator": "0"
+                    },
+                    {
+                      "Id": "IFT",
+                      "Indicator": "0"
+                    },
+                    {
+                      "Id": "HIP",
+                      "Indicator": "0"
+                    },
+                    {
+                      "Id": "PRG",
+                      "Indicator": "0"
+                    },
+                    {
+                      "Id": "DDAC",
+                      "Indicator": "0"
+                    }
+                  ]
+                }
+              },
+              "SequenceID": "1",
+              "coverage": [
+                {
+                  "Indicator": "0",
+                  "PlanName": "1",
+                  "SumInsured": 0,
+                  "Type": "MyHealthCriticalIllness"
+                },
+                {
+                  "Indicator": "0",
+                  "Type": "IndividualPersonalAccidentRider"
+                },
+                {
+                  "Indicator": "0",
+                  "Type": "OptimaWellbeing"
+                },
+                {
+                  "Indicator": "0",
+                  "IsGlobal": "0",
+                  "SumInsured": 0,
+                  "Type": "MyHealthHospitalCashBenefit"
+                },
+                {
+                  "Indicator": "0",
+                  "Type": "UnlimitedRestoreRider"
+                },
+                {
+                  "Indicator": "0",
+                  "Type": "ProtectorRider"
+                },
+                {
+                  "Indicator": "0",
+                  "SumInsured": 0,
+                  "Type": "HospitalDailyCashRider"
+                },
+                {
+                  "Indicator": "0",
+                  "Type": "OverseasTravelSecure"
+                },
+                {
+                  "Indicator": "0",
+                  "Type": "AggregateDeductible"
+                },
+                {
+                  "Indicator": "0",
+                  "Type": "ProtectBenefit"
+                },
+                {
+                  "Indicator": "0",
+                  "Type": "PlusBenefit"
+                },
+                {
+                  "Indicator": "0",
+                  "PeriodDuration": "0",
+                  "Type": "PEDWaiting"
+                },
+                {
+                  "Indicator": "0",
+                  "SumInsured": 0,
+                  "Type": "Parenthood"
+                },
+                {
+                  "Indicator": "0",
+                  "Type": "Limitless"
+                },
+                {
+                  "Indicator": "0",
+                  "Type": "ABCD"
+                }
+              ],
+              "member": {
+                "Gender": "M",
+                "Height": "166.98",
+                "InsuredLevel80DCertificate": false,
+                "InsuredName": "SAKUNTHALAP",
+                "IsPoliticallyExposedPerson": "0",
+                "IsProposerInsured": "1",
+                "MaritalStatus": "S",
+                "MedicalAdversity": "0",
+                "MemberDOB": "1987-09-07",
+                "Nationality": "INDI",
+                "OptFor": "",
+                "RelationshipWithProposer": "Self",
+                "ResidentialStatus": "ResidentIndian",
+                "Salutation": "MR",
+                "SumInsured": "500000",
+                "Weight": "55.00"
+              }
+            }
+          ]
+        }
+      }
+    }
+  }
+}

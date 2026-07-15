@@ -1,0 +1,1791 @@
+{
+  "paymentCollectedResponse": {
+    "session": {
+      "@clientId": "08DEBFA6E22BECE3",
+      "@id": "268670",
+      "data": {
+        "@id": "d6FA450F008954DB093E943F2657B2DF2",
+        "InstallmentSchedule": {
+          "@id": "I0E8FB6A97E164F3B9C20F5D7F23312C6",
+          "ProvidePayPlan": "1"
+        },
+        "account": {
+          "@id": "a5CCFD8E5D9A54CC68356D2E351E46067",
+          "AnnualIncome": "15-20Lacs",
+          "CISAcknowledgement": "No",
+          "CKYCNumber": null,
+          "CriminalProceedingDetails": null,
+          "CriminalProceedingInPast3Years": "0",
+          "DOBAsPerPehchaan": "1987-09-07",
+          "DateOfBirth": "1987-09-07",
+          "Education": "PostGraduate",
+          "FirstName": "SAKUNTHALA",
+          "Gender": "M",
+          "IndustryType": null,
+          "InvestableAssets": "0",
+          "IsPermanentAddressSameAsCorrespondence": "0",
+          "LimitMoreThanFiveLakhs": "0",
+          "LimitMoreThanTwoLakhs": "0",
+          "MaritalStatus": "S",
+          "MiddleName": null,
+          "NRIDiscount": null,
+          "Name": "P",
+          "NameAsPerPehchaanID": "SAKUNTHALAP",
+          "Nationality": "INDI",
+          "Occupation": "231",
+          "OtherEducation": null,
+          "OtherIndustryType": null,
+          "PANNumber": "CYUPS5288Q",
+          "PartyType": "P",
+          "PehchaanID": "UC4VNKAALM",
+          "PehchaanIDStatus": "approved",
+          "PhysicalPolicyCopyrequired": "0",
+          "PoliticallyExposed": "0",
+          "ResidentialStatus": "ResidentIndian",
+          "Salutation": "MR",
+          "SourceOfFunds": null,
+          "SourceOfIncome": null,
+          "TypeOfBusiness": "Intermediary",
+          "address": {
+            "@id": "a542F94C6C9E44893AE97CF259FF71ECF",
+            "Correspondence": {
+              "@id": "CB15B1FD493A84CE4B4A69599BE84C5A6",
+              "Address1": "Houseno. 61",
+              "Address2": "Mothe Nagaon",
+              "Address3": "Near Ganesh Mandir",
+              "City": "MUMBAI",
+              "Pincode": "400010",
+              "State": "MHIN"
+            },
+            "Permanent": {
+              "@id": "P4801BA116E0C4CB8B99816D8CDE0A5C1",
+              "Address1": "Houseno.61",
+              "Address2": "MotheNagaon",
+              "Address3": "NearGaneshMandir",
+              "City": "Mumbai",
+              "Pincode": "400010",
+              "State": "MHIN"
+            },
+            "Address1": "Houseno. 61",
+            "Address2": "Mothe Nagaon",
+            "Address3": "Near Ganesh Mandir",
+            "State": "MHIN",
+            "ZipCode": "400010",
+            "City": "MUMBAI",
+            "StateFullName": "Maharashtra",
+            "StateCaption": "Maharashtra"
+          },
+          "communication": {
+            "@id": "cD13F18C86C4C44A1906A1D169A0CE2A1",
+            "EmailId": "ub@hdfcergo.com",
+            "Mobile": "9930247107"
+          },
+          "intermediarydetails": {
+            "@id": "i320D7ACE4B0D402489CE6FB20DB1EC8B",
+            "SP_PospCode": null,
+            "BranchName": "Ghaziabad - M. G. Tower",
+            "IntermediaryCode": "200798503757",
+            "ChannelNumber": null,
+            "BranchCode": null,
+            "PrimarySalesVertical": null,
+            "SecondarySalesVertical": null,
+            "BusinessLocation": null,
+            "SecondarySalesManager": null,
+            "Vertical": "RBG",
+            "ChangeInCommission": "No",
+            "CondMinMax": "0",
+            "SetTerrorismFlagTrue": "1",
+            "IssuingBranchLocation": "UPIN",
+            "IssuingOffice": "Ghaziabad - M. G. Tower",
+            "OFFICE_GST_STATE_CODE": "09",
+            "StateFullName": "Uttar Pradesh"
+          },
+          "kyc": {
+            "@id": "k2781A993BE9C41B4B3D8C12C9FDC32CF",
+            "IsKYCVerified": "1",
+            "FullName": "SAKUNTHALA P",
+            "KYCOutputKYCMessageIndicatorTrue": "0",
+            "KYCRequiredIndicatorTrue": "0",
+            "KYCRequiredMessageCondOrg": null,
+            "EmailSent": "0",
+            "PANNumber": "CYUPS5288Q",
+            "KYCPrivateShowSendEmail": "0"
+          },
+          "nominee": {
+            "@id": "n1CC26EB3AD2A427C8C4F8F6C6B1B3603",
+            "Address": null,
+            "NomineeAge": "36.00",
+            "NomineeDOB": "1989-06-24",
+            "NomineeName": "Nisha Patil",
+            "NomineeRelationship": "Wife",
+            "DeclarationCheckbox": "0",
+            "NomineeBankAccountNo": null,
+            "NomineeIFSCCode": null,
+            "NomineeBankName": null,
+            "NomineeSharePercentage": "100",
+            "DeclarationText": "Declaration Text: I hereby declare as both the proposer and the nominee hold a joint bank account, the bank account details of the nominee are same as that of proposer.",
+            "NomineeAddressSameAsProposer": "1"
+          },
+          "refunddetails": {
+            "@id": "r3E7FFE17CF234AF6B5305D7FBC75AB2C",
+            "BankAccountNumber": "178293738399",
+            "BankName": "ICICIBANKLIMITED",
+            "BranchName": "ERNAKULAMCOCHIN",
+            "ChequeAmount": null,
+            "IFSCCode": "ICIC0000010",
+            "NameAsInBankAccount": "SAKUNTHALAP"
+          },
+          "Tier": "1",
+          "MobileNumber": "9930247107",
+          "ApplicantFullName": "SAKUNTHALA P",
+          "ProposerFullName": "SAKUNTHALA P",
+          "POL_OCCUPATION": "Salaried",
+          "GSTIN": null,
+          "GSTINState": null,
+          "CurrentCountryOfResidence": null,
+          "CustomerID": "260000490443",
+          "AccountPrivateShowCustomerSection": "1",
+          "ProposerStateGSTCode": "27",
+          "TaxExemption": "NotApplicable",
+          "CISConsentReceivedDatetime": "1900-01-01T00:00:00.000",
+          "CustomerPartyTypeCategory": "Noneoftheabove",
+          "PehchaanIDStatusOn": "2026-07-15T09:58:30.546",
+          "NameMatchStatus": "Yes",
+          "NameMatchStatusOn": "2026-07-15T09:58:30.546",
+          "InvalidPehchaanID": "No",
+          "DOBMatchStatus": "Yes",
+          "TaxExemptionCategory": "NoException",
+          "CustomerConsent": "NotProvided",
+          "ProposerNameFlag": "1",
+          "HeliosInwardNumber": null,
+          "NoClaimRecordsFound": "0",
+          "location": [
+            {
+              "@id": "l3816401C85BA4B48B26EADC7F7F74C25",
+              "address": {
+                "@id": "aB532105AFA374DB6B6EB2376B820AAC1",
+                "City": null,
+                "State": null,
+                "Address1": null,
+                "Address2": null,
+                "Address3": null
+              },
+              "tax": [
+                {
+                  "@id": "tC5893CF7522C4B1784E4410B4E3CA7B6",
+                  "Type": "GST"
+                },
+                {
+                  "@id": "t376FF34BDE9E4057861CDD5F6BACE7E4",
+                  "Type": "IGST"
+                },
+                {
+                  "@id": "t2BB3E7768F3A449EB4530FD28B671469",
+                  "Type": "UGST"
+                },
+                {
+                  "@id": "tC2D94EAFD0B5427EACE8F08596E02DE0",
+                  "Type": "SGST"
+                },
+                {
+                  "@id": "t2DA3D7D804D74F3C9B36E011DCE2DBAC",
+                  "Type": "CGST"
+                }
+              ],
+              "PolicyCoverageGST": "0",
+              "TopLocation": "0"
+            }
+          ],
+          "MemberID": "MI260000398758",
+          "ResidentialStatusPrior": null,
+          "OccupationPrior": null,
+          "PoliticallyExposedPrior": null,
+          "InvestableAssetsPrior": null,
+          "LimitMoreThanFiveLakhsPrior": null
+        },
+        "policy": {
+          "@id": "p15BA65DC3D0844F2B93D49A48ACCAEC0",
+          "ChildSplitFlag": "0",
+          "EMI": "0",
+          "EffectiveDate": "2025-07-30",
+          "EffectiveTime": "03:30PM",
+          "FamilyType": "1A",
+          "InstallmentFrequencyOpted": "HEGI_ACT_P1",
+          "IsEmployeeDiscountApplicable": "0",
+          "IsLoyaltyDiscountApplicable": "1",
+          "IsProposal": "0",
+          "OriginatingSystem": "1UP",
+          "Plan": "OptimaSecure",
+          "PolicyType": "Individual",
+          "Product": "OptimaSecure",
+          "ProposalDate": "2025-07-30",
+          "SuppressEmailSMS": "1",
+          "Term": "24",
+          "TransactionType": "New",
+          "UserID": "AKSHAY.JAINPOS",
+          "bancassurance": {
+            "@id": "b7EECA1087CAD4C46B204806A40DD0ABC",
+            "BankBranchID": null,
+            "CustomerID": null,
+            "Funded": "0",
+            "LCCode": null,
+            "LGCode": null,
+            "LOSCode": null,
+            "LosNoLanAan": null,
+            "SavingBankAccount": null
+          },
+          "line": {
+            "@id": "l30143C040E144C8684DBE310DB784078",
+            "risk": [
+              {
+                "@id": "r4562F9AD00004FE193F3A0D848BFA3CB",
+                "@deleted": "0",
+                "Questions": {
+                  "@id": "QF7C5DF85E4B3425AA83224C207DC62D4",
+                  "MedicalQuestions": {
+                    "@id": "MA7D94A48B9A749319293F9633D969A78",
+                    "LifeStyleQ": {
+                      "@id": "LDD4BE26B0F7E402CB69525CB6D50A1C0",
+                      "Lifestylehabits": "0",
+                      "Cigarettes": {
+                        "@id": "C0714F53C5A8F44EFA51E1D9F1735B900",
+                        "CigarettesSelected": "0",
+                        "Frequency": null,
+                        "Quantity": null,
+                        "Years": null
+                      },
+                      "Bidis": {
+                        "@id": "B006090467DB54909938C4CCCF58DB97A",
+                        "BidisSelected": "0",
+                        "Frequency": null,
+                        "Quantity": null,
+                        "Years": null
+                      },
+                      "Alcohol": {
+                        "@id": "A772B4EA2266B474CBB7CC4DCA6F95172",
+                        "AlcoholSelected": "0",
+                        "Frequency": null,
+                        "Quantity": null,
+                        "Years": null
+                      },
+                      "Drugs": {
+                        "@id": "DBD2F0DC4AB8A4FA29A77F5E719D86C59",
+                        "DrugsSelected": "0",
+                        "Frequency": null,
+                        "Quantity": null,
+                        "Years": null
+                      },
+                      "GutkaPouches": {
+                        "@id": "G1C255BAD5E794956832F186C04D879F3",
+                        "GutkaPouchesSelected": "0",
+                        "Frequency": null,
+                        "Quantity": null,
+                        "Years": null
+                      },
+                      "TobaccoPouches": {
+                        "@id": "T171ACFA5665B4D81B4166860D20A3268",
+                        "TobaccoPouchesSelected": "0",
+                        "Frequency": null,
+                        "Quantity": null,
+                        "Years": null
+                      }
+                    },
+                    "Primary": [
+                      {
+                        "@id": "PD765A670659D4498B90F4429E3B131EB",
+                        "Id": "ADD",
+                        "Indicator": "0",
+                        "Reflexive": [
+                          {
+                            "@id": "R91FCA370FAE74D38B540D65FAF344A42",
+                            "Id": "ADD-HIV",
+                            "Indicator": "0"
+                          },
+                          {
+                            "@id": "R3A9AEB92E45540F9A8286E2C4CBA8729",
+                            "Id": "ADD-CTG",
+                            "Indicator": "0"
+                          },
+                          {
+                            "@id": "RD50E5B099B26453DBE71FD944EB65C58",
+                            "Id": "ADD-CHP",
+                            "Indicator": "0"
+                          },
+                          {
+                            "@id": "RD1B5201A627442329E2B8B4378BA0846",
+                            "Id": "ADD-LJH",
+                            "Indicator": "0"
+                          },
+                          {
+                            "@id": "R7387FC2D2AD54C8B94F5A7D6D4A35CFF",
+                            "Id": "ADD-TBA",
+                            "Indicator": "0"
+                          },
+                          {
+                            "@id": "RAFD28C6C62CD4745A7195D827E42FC99",
+                            "Id": "ADD-ULC",
+                            "Indicator": "0"
+                          },
+                          {
+                            "@id": "R1A59439A57B0426C80A30009CFAB7EB7",
+                            "Id": "ADD-BD",
+                            "Indicator": "0"
+                          },
+                          {
+                            "@id": "R44094DFF1F304F85AD417A8DD605F965",
+                            "Id": "ADD-NRV",
+                            "Indicator": "0"
+                          },
+                          {
+                            "@id": "RF0BF5BCCDFCC4A528FDF4897D8515A90",
+                            "Id": "ADD-SPE",
+                            "Indicator": "0"
+                          },
+                          {
+                            "@id": "R27C02FAF2E214C11812FB38D9F9CD185",
+                            "Id": "ADD-ENT",
+                            "Indicator": "0"
+                          },
+                          {
+                            "@id": "RCF74B8AF36B9417F83DF56E3FCA20688",
+                            "Id": "ADD-MSC",
+                            "Indicator": "0"
+                          }
+                        ]
+                      },
+                      {
+                        "@id": "PF7321C880EAC4AFD8E6A7C1B9759E5D3",
+                        "Id": "SG",
+                        "Indicator": "0"
+                      },
+                      {
+                        "@id": "P2129F280FFEE4643A399B73571EE701B",
+                        "Id": "MR",
+                        "Indicator": "0",
+                        "Reflexive": [
+                          {
+                            "@id": "R14D42014389D4DF8A579A1F325BA3178",
+                            "Id": "MR-DB",
+                            "SubReflexive": [
+                              {
+                                "@id": "SA2460970EDD14FE9A7A37907722CBECD",
+                                "Id": "MR-DB-EXD",
+                                "Response": null
+                              }
+                            ]
+                          },
+                          {
+                            "@id": "R542D620E023846FEBF99637BA56616DB",
+                            "Id": "MR-HYP",
+                            "SubReflexive": [
+                              {
+                                "@id": "S31707390C2C34F9B974BC249E2BA733D",
+                                "Id": "MR-HYP-EXD",
+                                "Response": null
+                              }
+                            ]
+                          },
+                          {
+                            "@id": "R68EEE1C5DD464C2486B4AB3B79228F7B",
+                            "Id": "MR-OHD",
+                            "SubReflexive": [
+                              {
+                                "@id": "S4124E43BB55A40C3BE71367ACB417E51",
+                                "Id": "MR-OHD-EXD",
+                                "Response": null
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "@id": "PF0485EEC437C40A380ED515EE4C5D0B3",
+                        "Id": "IFT",
+                        "Indicator": "0",
+                        "Reflexive": [
+                          {
+                            "@id": "R864A82F9168E447584BF7F9FCEB2354F",
+                            "Id": "IFT-DI",
+                            "SubReflexive": [
+                              {
+                                "@id": "S0CA3369C3BB648DA95B9402FC2E5845D",
+                                "Id": "IFT-DI-TT",
+                                "Response": null
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "@id": "PC755855E8EE24C9EAD7D49021EEC02CC",
+                        "Id": "HIP",
+                        "Indicator": "0",
+                        "Reflexive": [
+                          {
+                            "@id": "RA7656F7195D845098CA32F4E77668BFA",
+                            "Id": "HIP-PMC",
+                            "SubReflexive": [
+                              {
+                                "@id": "SA78CEB3745204770B6C28030A56AC018",
+                                "Id": "HIP-PMC-DT",
+                                "Response": null
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "@id": "P06FE0251F2254C7EAA0741F637BA521D",
+                        "Id": "PRG",
+                        "Indicator": "0",
+                        "Reflexive": [
+                          {
+                            "@id": "RBFBA95736C0A43C3B8668771CAE6108C",
+                            "Id": "PRG-EDD",
+                            "Response": null
+                          }
+                        ]
+                      },
+                      {
+                        "@id": "P63FAD8B4576F4685B79C621546DA4449",
+                        "Id": "DDAC",
+                        "Indicator": "0"
+                      }
+                    ]
+                  }
+                },
+                "SequenceID": "1",
+                "coverage": [
+                  {
+                    "@id": "c49553B2D20D24E919034D7334D474474",
+                    "Indicator": "0",
+                    "Type": "ProtectorRider",
+                    "OptedDate": null
+                  },
+                  {
+                    "@id": "c0EE03166498C4B93A4D2FC27AE678A0E",
+                    "Indicator": "0",
+                    "SumInsured": "0",
+                    "Type": "HospitalDailyCashRider",
+                    "OptedDate": null
+                  },
+                  {
+                    "@id": "c805CC88F3C594C19922660B3FAB68901",
+                    "Indicator": "0",
+                    "Type": "OverseasTravelSecure",
+                    "OptedDate": null
+                  },
+                  {
+                    "@id": "cD38F670BF5774227B700939914FCAEFA",
+                    "Indicator": "0",
+                    "PeriodDuration": "0",
+                    "Type": "PEDWaiting",
+                    "OptedDate": null
+                  },
+                  {
+                    "@id": "c22590AC3C5834BF3BDEC9CB38CEF04D1",
+                    "Type": "HospitalizationExpenses",
+                    "Indicator": "1",
+                    "SumInsured": "500000",
+                    "AccomodationRoomRentLimit": "0",
+                    "AccomodationICULimit": "0",
+                    "MedicalUWLoadingPercentage": "0",
+                    "ExclusionResponse": {
+                      "@id": "E461CCD3C725C4113AB6A611DD037DE7E",
+                      "CoverageExclusion": {
+                        "@id": "CB814B36CF5264A8B97251286A02B0688"
+                      }
+                    },
+                    "FirstYearPremiumRatio": "0.497363796133568",
+                    "SecondYearPremiumRatio": "0.502636203866432",
+                    "ThirdYearPremiumRatio": "0",
+                    "Premium": "28450",
+                    "OptedDate": "2025-07-30"
+                  },
+                  {
+                    "@id": "c46FFC707646B4515B8E3D1A6B72F1FC9",
+                    "Type": "AutomaticRestoreBenefit",
+                    "Indicator": "1",
+                    "SumInsured": "500000",
+                    "FrequencyOfPayout": "1 per year",
+                    "PayoutTypeMax": "500000",
+                    "premium": "0",
+                    "OptedDate": "2025-07-30"
+                  },
+                  {
+                    "@id": "c41BD44A7F52C488595636D5E62848B11",
+                    "Type": "AyushTreatment",
+                    "Indicator": "1",
+                    "SumInsured": "500000",
+                    "PayoutTypeMax": "500000",
+                    "premium": "0",
+                    "OptedDate": "2025-07-30"
+                  },
+                  {
+                    "@id": "c5859B520C0614810A0D2CD89A7BDAF76",
+                    "Type": "EOpinionforCriticalIllnessService",
+                    "Indicator": "1",
+                    "ListOfDisease": {
+                      "@id": "L97D6965C51004706A99F3D415C6B97FF",
+                      "disease": [
+                        {
+                          "@id": "dA919738C28AB4821A85127F9371A6A97",
+                          "name": "Cancer of Specified severity",
+                          "icdcode": null
+                        },
+                        {
+                          "@id": "dACF74933A60742C2805E99A8A4F355C7",
+                          "name": "open Chest CABG",
+                          "icdcode": null
+                        },
+                        {
+                          "@id": "dD1C31B7870A54B638024B0A4FC9C1E0D",
+                          "name": "Kidney failure requiring regular dialysis",
+                          "icdcode": null
+                        },
+                        {
+                          "@id": "d597F31D0B94C4AF5A558EAA8FE5C3C84",
+                          "name": "Myocardial Infarction (First Heart Attack Of specified severity)",
+                          "icdcode": null
+                        },
+                        {
+                          "@id": "d4632A2D7C734493EA04E13E0F690859F",
+                          "name": "Open Heart Replacement or Repair of Heart Valves",
+                          "icdcode": null
+                        },
+                        {
+                          "@id": "dE56C7D0BD42646D58D7590B8C3CED57C",
+                          "name": "Major Organ/Bone Marrow Transplantation",
+                          "icdcode": null
+                        },
+                        {
+                          "@id": "dD3E0408B0809424EB49FD4FD46D2D70D",
+                          "name": "Multiple Sclerosis with persisting symptoms",
+                          "icdcode": null
+                        },
+                        {
+                          "@id": "d664BEDFC32824F79B2DE65E3532289A1",
+                          "name": "permanent Paralysis of Limbs",
+                          "icdcode": null
+                        },
+                        {
+                          "@id": "dB706BFF58CC3497FBAF99913274D30D1",
+                          "name": "Stroke resulting in permanent symptoms",
+                          "icdcode": null
+                        },
+                        {
+                          "@id": "d2770F96E95CD4F84B034258CBDE14E6A",
+                          "name": "Benign Brain Tumour",
+                          "icdcode": null
+                        },
+                        {
+                          "@id": "dCE825620A69646BE94F778B230539BA6",
+                          "name": "Coma Of specified severity",
+                          "icdcode": null
+                        },
+                        {
+                          "@id": "d2CE95389FFF9420AAEC5A4ABC10E40E5",
+                          "name": "Parkinson's Disease",
+                          "icdcode": null
+                        },
+                        {
+                          "@id": "d01115ECF9B3C4FF4BB9B792F2B433269",
+                          "name": "Alzheimer's Disease",
+                          "icdcode": null
+                        },
+                        {
+                          "@id": "d9ED93E807D344C6398AEB397C9800CD8",
+                          "name": "Surgery of Aorta",
+                          "icdcode": null
+                        },
+                        {
+                          "@id": "dEBBEBF1035374374BFB29D08C996E5ED",
+                          "name": "End Stage Liver Failure",
+                          "icdcode": null
+                        },
+                        {
+                          "@id": "d53FA69D77D8A4E988D1FC318E9409A33",
+                          "name": "Deafness",
+                          "icdcode": null
+                        },
+                        {
+                          "@id": "d2EEBA6245018495FA98363ED8D1270C8",
+                          "name": "Loss Of Speech",
+                          "icdcode": null
+                        },
+                        {
+                          "@id": "d694C6C22390B448D88C37AA986CCD348",
+                          "name": "Third Degree Burns",
+                          "icdcode": null
+                        },
+                        {
+                          "@id": "d7001C3C0A05E41EFA93E16230194C4CB",
+                          "name": "Medullary Cystic Disease",
+                          "icdcode": null
+                        },
+                        {
+                          "@id": "d9275EFAA4D434B09A7DF8D58A8F2B99A",
+                          "name": "Motor Neurone Disease with permanent symptoms",
+                          "icdcode": null
+                        },
+                        {
+                          "@id": "dE7213C5140A04D85976A39747F9A67D1",
+                          "name": "Muscular Dystrophy",
+                          "icdcode": null
+                        },
+                        {
+                          "@id": "d91F1D72327D54B68A41ED8D2D2AF4A39",
+                          "name": "Infective Endocarditis",
+                          "icdcode": null
+                        },
+                        {
+                          "@id": "d82629BA864194FFE9840B4B61D81E8DE",
+                          "name": "Primary (Idiopathic) Pulmonary Hypertension",
+                          "icdcode": null
+                        },
+                        {
+                          "@id": "dD6B1A91DA1354273840B91A28CCE015B",
+                          "name": "Dissecting Aortic Aneurysm",
+                          "icdcode": null
+                        },
+                        {
+                          "@id": "d1B7C7BE2DD4540E3A7CDAEC9C5BDFAD6",
+                          "name": "Systemic Lupus Erythematous with Lupus Nephritis",
+                          "icdcode": null
+                        },
+                        {
+                          "@id": "d576195E8737A42F5B5796A41B5A79F2F",
+                          "name": "Apallic Syndrome",
+                          "icdcode": null
+                        },
+                        {
+                          "@id": "dBFEDE5EEEE4D46F9B99DA6023535AB9D",
+                          "name": "Aplastic Anaemia",
+                          "icdcode": null
+                        },
+                        {
+                          "@id": "dA9E990F698364569BDA828462F518618",
+                          "name": "Bacterial Meningitis",
+                          "icdcode": null
+                        },
+                        {
+                          "@id": "dCFCFBBA845F94D0D8A41077971DD1BCF",
+                          "name": "Cardiomyopathy",
+                          "icdcode": null
+                        },
+                        {
+                          "@id": "d93417C8E5E2C445B99A6B88C92180DA2",
+                          "name": "Other Serious coronary artery disease",
+                          "icdcode": null
+                        },
+                        {
+                          "@id": "dB0E70773D65B467D8FC11D988864EB04",
+                          "name": "Creutzfeldt-Jakob Disease (CJD)",
+                          "icdcode": null
+                        },
+                        {
+                          "@id": "d13C10ADEB4BA4884987D01F7FFE00952",
+                          "name": "Encephalitis",
+                          "icdcode": null
+                        },
+                        {
+                          "@id": "d321A4C131D26416593D40DBF711F44D1",
+                          "name": "End Stage Lung Failure",
+                          "icdcode": null
+                        },
+                        {
+                          "@id": "dDB4A9C305E014789879D5901D1AA29F8",
+                          "name": "Fulminant Hepatitis",
+                          "icdcode": null
+                        },
+                        {
+                          "@id": "dA38D47E709F4422388255158DB01ECE6",
+                          "name": "Eisenmenger's Syndrome",
+                          "icdcode": null
+                        },
+                        {
+                          "@id": "d8AA4D31A7BE846C78C700C8BE439E180",
+                          "name": "Major Head Trauma",
+                          "icdcode": null
+                        },
+                        {
+                          "@id": "d8E6A8D06474D44D78ACC32D84A8A1F12",
+                          "name": "Chronic Adrenal Insufficiency (Addison's Disease)",
+                          "icdcode": null
+                        },
+                        {
+                          "@id": "dD2EFAD49F28C4F3E8398728BE607A770",
+                          "name": "Progressive Scleroderma",
+                          "icdcode": null
+                        },
+                        {
+                          "@id": "d50718638AF44445580CADAB57F98AD55",
+                          "name": "progressive Supranuclear Palsy",
+                          "icdcode": null
+                        },
+                        {
+                          "@id": "dA4286CF39DCC4FC7A3A14E4AA2E26E94",
+                          "name": "Blindness",
+                          "icdcode": null
+                        },
+                        {
+                          "@id": "d1EA111400B3F485D9297A31ABD62F86E",
+                          "name": "Chronic Relapsing Pancreatitis",
+                          "icdcode": null
+                        },
+                        {
+                          "@id": "d456BDC8BF0D244C2B0121921BF7392CE",
+                          "name": "Elephantiasis",
+                          "icdcode": null
+                        },
+                        {
+                          "@id": "dD9EC897845A4436F8B03A6249DED2D7E",
+                          "name": "Brain Surgery",
+                          "icdcode": null
+                        },
+                        {
+                          "@id": "dF4769EFA150C4F40B05F9985182AE79E",
+                          "name": "HIV due to blood transfusion and occupationally acquired HIV",
+                          "icdcode": null
+                        },
+                        {
+                          "@id": "d7B40851AB66C4344A127572D95AD5CA1",
+                          "name": "Terminal Illness",
+                          "icdcode": null
+                        },
+                        {
+                          "@id": "dD368C603C6894D1AA476800D6CDCA104",
+                          "name": "Myelofibrosis",
+                          "icdcode": null
+                        },
+                        {
+                          "@id": "d4B840B1C73524C1381F081D18052B8E7",
+                          "name": "Pheochromocytoma",
+                          "icdcode": null
+                        },
+                        {
+                          "@id": "dCC8F9DB3CFE74ACCB678F763F851FCAB",
+                          "name": "Crohn's Disease",
+                          "icdcode": null
+                        },
+                        {
+                          "@id": "d9238D264CB134C2FA635E21ED7E28180",
+                          "name": "Severe Rheumatoid Arthritis",
+                          "icdcode": null
+                        },
+                        {
+                          "@id": "d7EE26783A5934DDF91D19988E1B0DA69",
+                          "name": "Severe Ulcerative Colitis",
+                          "icdcode": null
+                        },
+                        {
+                          "@id": "d8D59D48C10C646E397BC8346DF9FE370",
+                          "name": "Angioplasty",
+                          "icdcode": null
+                        }
+                      ]
+                    },
+                    "FrequencyOfPayout": "1 per year",
+                    "PayoutTypeMax": "0",
+                    "premium": "0",
+                    "OptedDate": "2025-07-30"
+                  },
+                  {
+                    "@id": "cC330D9D5E74C4DB58F9790F56ADDCA89",
+                    "Type": "PostHospitalizationExpenses",
+                    "Indicator": "1",
+                    "SumInsured": "500000",
+                    "NumberOfDays": "180",
+                    "PayoutTypeMax": "500000",
+                    "premium": "0",
+                    "OptedDate": "2025-07-30"
+                  },
+                  {
+                    "@id": "cCF1B7292EF944055B5EBE5B9DB6B731E",
+                    "Type": "PreHospitalizationExpenses",
+                    "Indicator": "1",
+                    "SumInsured": "500000",
+                    "NumberOfDays": "60",
+                    "PayoutTypeMax": "500000",
+                    "premium": "0",
+                    "OptedDate": "2025-07-30"
+                  },
+                  {
+                    "@id": "c186DD08A88E64C0D9626B5C40627E54F",
+                    "Type": "RoadAmbulance",
+                    "Indicator": "1",
+                    "SumInsured": "500000",
+                    "PayoutTypeMax": "500000",
+                    "premium": "0",
+                    "OptedDate": "2025-07-30"
+                  },
+                  {
+                    "@id": "cD9265912F31E45DE84EC0C0551AF7D70",
+                    "Type": "SecureBenefit",
+                    "Indicator": "1",
+                    "SumInsured": "500000",
+                    "PayoutFrequency": "Per day",
+                    "BenefitApplicability": "Hospital Cash Benefit, Pre-Hospitalization Expenses, Post-Hospitalization Expenses, Organ Donor Expenses, Domiciliary Hospitalization, AYUSH Treatment, Home Health Care, Protect Benefit",
+                    "PayoutTypeMax": "500000",
+                    "premium": "0",
+                    "OptedDate": "2025-07-30"
+                  }
+                ],
+                "member": {
+                  "@id": "m0D17F5BD466D4B6CB99C98CB17C64AFD",
+                  "Gender": "M",
+                  "Height": "166.98",
+                  "InsuredLevel80DCertificate": "false",
+                  "InsuredName": "SAKUNTHALAP",
+                  "IsPoliticallyExposedPerson": "0",
+                  "IsProposerInsured": "1",
+                  "MaritalStatus": "S",
+                  "MedicalAdversity": "0",
+                  "MemberDOB": "1987-09-07",
+                  "Nationality": "INDI",
+                  "OptFor": null,
+                  "RelationshipWithProposer": "Self",
+                  "ResidentialStatus": "ResidentIndian",
+                  "Salutation": "MR",
+                  "SumInsured": "500000",
+                  "Weight": "55.00",
+                  "IsAddedCurTran": "1",
+                  "FirstInceptionDate": "2025-07-30",
+                  "BMI": "19.959",
+                  "MemberAge": "37",
+                  "Occupation": "231",
+                  "Dependent": "No",
+                  "AnnualIncome": "15-20Lacs",
+                  "IsDisabilityQuestion": "0",
+                  "CustomerID": "260000490443",
+                  "MemberID": "MI260000398758",
+                  "PartyID": "08DEBFA6E22BECE3"
+                },
+                "MemberAgeForBlackBoxRating": null,
+                "CalculatedPremium": "28450",
+                "CummulativeDiscountAmountAfterCappingWritten": "711.25",
+                "FitnessDiscountAmountWritten": "0",
+                "StayActiveDiscountAmountWritten": "0",
+                "PurePremium": "25658",
+                "AggregateDiscountAmount": "0",
+                "CummulativeDiscountAfterCappingAmount": "711.25",
+                "NRIDiscountAmount": "0",
+                "LongTermDiscountAmount": "2080.41",
+                "DirectChannelDiscountAmount": "0",
+                "FitnessDiscountAmount": "0",
+                "StayActiveDiscountAmount": "0",
+                "MedicalUWLoadingAmount": "0",
+                "AggregateDiscountAmountPrior": "0",
+                "TotalCummulativeDiscountAmountPrior": "0",
+                "CummulativeDiscountAmountChange": "711.25",
+                "NRIDiscountAmountPrior": "0",
+                "LongTermDiscountAmountPrior": "0",
+                "FitnessDiscountAmountChange": "0",
+                "StayActiveDiscountAmountChange": "0",
+                "tax": [
+                  {
+                    "@id": "t7D937EBF1BA94EC9B47ED78C9EEABF49",
+                    "Type": "CGST",
+                    "Premium": "0",
+                    "BaseRate": "0",
+                    "NetCGST": "0",
+                    "TDS": "0"
+                  },
+                  {
+                    "@id": "t443AE20093F244A5B70AE2057EE18C4D",
+                    "Type": "IGST",
+                    "Premium": "4618",
+                    "BaseRate": "18",
+                    "IGST": "0",
+                    "TDS": "0"
+                  },
+                  {
+                    "@id": "tDB0876E6D30D4088AB441C6D10DAB15A",
+                    "Type": "SGST",
+                    "Premium": "0",
+                    "BaseRate": "0",
+                    "SGST": "0",
+                    "TDS": "0"
+                  },
+                  {
+                    "@id": "t9628A3B31B7745F5A83EDAABA5D78595",
+                    "Type": "UGST",
+                    "Premium": "0",
+                    "BaseRate": "0",
+                    "UGST": "0",
+                    "TDS": "0"
+                  },
+                  {
+                    "@id": "tB2A39B36F9FD4534A3016FD4E66AE662",
+                    "Type": "GST",
+                    "BaseRate": "0.18",
+                    "Premium": "4618.44"
+                  }
+                ],
+                "TaxesSurcharges": "4618",
+                "Premium": "30276",
+                "RiderPremium": "0",
+                "TotalDiscount": "2791.66",
+                "EmployeeDiscountAmount": "0",
+                "FamilyDiscountAmount": "0",
+                "LoyaltyDiscountAmount": "711.25",
+                "OnlineDiscountAmount": "0",
+                "BasePremium": "28450",
+                "wellnesscorner": {
+                  "@id": "wCE6FE212C7994066A2DEF994E18DEE0B",
+                  "Indicator": "0",
+                  "benefit": [
+                    {
+                      "@id": "b996D8E38048348B08BE3FBFD15D96674",
+                      "Type": "Discounts on Out-Patient consultations",
+                      "Count": "0"
+                    },
+                    {
+                      "@id": "b6D3CE5072B84407B9878F7F6C574583F",
+                      "Type": "Discounts on out-patient treatment",
+                      "Count": "0"
+                    },
+                    {
+                      "@id": "b90B60266EB1C4795BC122A1DA6F1E7E2",
+                      "Type": "Discounts on Diagnostic services",
+                      "Count": "0"
+                    },
+                    {
+                      "@id": "bFF99246DCD1C4E24A70A07844083ED0A",
+                      "Type": "Discount on Pharmacy expenses",
+                      "Count": "0"
+                    },
+                    {
+                      "@id": "bF899230269674BFBB06708CBD77BF157",
+                      "Type": "Discounts on Health Check-up",
+                      "Count": "0"
+                    },
+                    {
+                      "@id": "b15B0AD8DAD764F659611F6BF683637DA",
+                      "Type": "Discounts on Chronic Care Management Program",
+                      "Count": "0"
+                    },
+                    {
+                      "@id": "b46E2061062A947FE96552A58FED176F1",
+                      "Type": "Discount on Lifestyle Management Program",
+                      "Count": "0"
+                    },
+                    {
+                      "@id": "b7C115E91464F45A69BFEF4BD24DA28FD",
+                      "Type": "Fitness Discounts",
+                      "Count": "0"
+                    },
+                    {
+                      "@id": "b8659BE2F95C44E72B1702CF7BD21E95B",
+                      "Type": "Out-patient consultations",
+                      "Count": "0"
+                    },
+                    {
+                      "@id": "b2B7D76E2515F44928987594E27C378EC",
+                      "Type": "Emergency Road Ambulance Assistance",
+                      "Count": "0"
+                    },
+                    {
+                      "@id": "bDDB8CCFC146B4DFBA64512686DFEAFF6",
+                      "Type": "Fitness Services",
+                      "Count": "0"
+                    },
+                    {
+                      "@id": "bC6289FA5AE3045E9A4C0FE9484A4D244",
+                      "Type": "Counselling",
+                      "Count": "0"
+                    },
+                    {
+                      "@id": "b6F54A6BA7AE54321966C081D205676F1",
+                      "Type": "Wellness Sessions",
+                      "Count": "0"
+                    },
+                    {
+                      "@id": "b12983C22294143E8A810211283FAB94D",
+                      "Type": "Health Risk Assessment",
+                      "Count": "0"
+                    },
+                    {
+                      "@id": "b199F035A01B04E258EC3015EFBD24F28",
+                      "Type": "Wellness Event",
+                      "Count": "0"
+                    }
+                  ],
+                  "Premium": "0"
+                },
+                "HasRejectedICD": "0",
+                "PreviousInsurerDetails": {
+                  "@id": "P2DF6E5FC1CB4483793017A349EB48A4E",
+                  "CBToBeConsideredToEnhanceSI": "No",
+                  "PreviousPolicyDetailsAvailable": "1",
+                  "PreviousDetailsSameAsInsured1": "1",
+                  "waitingperiod": {
+                    "@id": "wF4A008B29FD149D38B6CD0E75314DA2A",
+                    "InitialWaitingPeriod": "30days",
+                    "PreExistingDieaseWaitingPeriod": "3",
+                    "SpecificIllnessWaitingPeriod": "2"
+                  },
+                  "PreviousInsurerName": null
+                },
+                "Member_OCCUPATION": "Salaried",
+                "unifiedmemberdecision": {
+                  "@id": "u6C22E9DFCD3142E6A1D5B51A6B302F63",
+                  "Decision": "Accept",
+                  "PPCCode": "STP",
+                  "ReasonText": null
+                },
+                "memberfinaldecision": {
+                  "@id": "mF24A8D1279124F119760DADE818B9189",
+                  "ReasonText": null,
+                  "Decision": null
+                },
+                "IsNSTP": "N",
+                "coveragefinaldecision": {
+                  "@id": "c6237632D76E5445897517A94E6915728",
+                  "Decision": null
+                }
+              }
+            ],
+            "tax": [
+              {
+                "@id": "t77193D3227B34428B099932D97C45D55",
+                "Type": "StampDuty",
+                "Indicator": "1",
+                "Premium": "1"
+              },
+              {
+                "@id": "tF94742083E3547AC9E1EB26BBFE31C78",
+                "Type": "CESS",
+                "Indicator": "1",
+                "Premium": "0"
+              },
+              {
+                "@id": "t4A1CC3894BC44B5E9246BD2D28731F3F",
+                "Type": "CGST",
+                "Indicator": "1",
+                "NetCGST": "0",
+                "Premium": "0"
+              },
+              {
+                "@id": "t84DD314BE73646F5A4B61EA01950EEEF",
+                "Type": "IGST",
+                "Indicator": "1",
+                "NetIGST": "0",
+                "Premium": "4618"
+              },
+              {
+                "@id": "tCB91662EBE2E4E0AB6E1C587F15261D7",
+                "Type": "SGST",
+                "Indicator": "1",
+                "NetSGST": "0",
+                "Premium": "0"
+              },
+              {
+                "@id": "tBB587AA7FEBC47D7A320CA44362BFCD7",
+                "Type": "UGST",
+                "Indicator": "1",
+                "NetUGST": "0",
+                "Premium": "0"
+              },
+              {
+                "@id": "t285E0D3738FF4BB69FF286EA7691E87B",
+                "Type": "GST",
+                "Indicator": "1",
+                "Premium": "4618.44"
+              }
+            ],
+            "PolicyCoverageStatesSEZ": "0",
+            "PurePremium": "25658",
+            "TypeOfIntermediary": "AGENT",
+            "RandomValue": "3",
+            "IsChildBelow5RejectApplicable": "0",
+            "IsQuoteDeclineAppliPreMemReject": "0",
+            "RiskTotalCGSTAmount": "0",
+            "RiskTotalSGSTAmount": "0",
+            "RiskTotalIGSTAmount": "4618",
+            "RiskTotalUGSTAmount": "0",
+            "TotalRiderPremium": "0",
+            "TotalDiscountAmount": "2791.66",
+            "TotalMedicalUWAmount": "0",
+            "TotalAggregateDeductibleDiscountAmount": "0",
+            "TotalEmployeeDiscountAmount": "0",
+            "TotalFamilyDiscountAmount": "0",
+            "TotalLongTermDiscountAmount": "2080.41",
+            "TotalLoyaltyDiscountAmount": "711.25",
+            "TotalNRIDiscountAmount": "0",
+            "TotalOnlineDiscountAmount": "0",
+            "TotalBasePremium": "28450",
+            "TotalDirectChannelDiscountAmount": "0",
+            "TotalFitnessDiscountAmount": "0",
+            "TotalStayActiveDiscountAmount": "0",
+            "TotalCumulativeDiscountAfterCappingAmount": "711.25",
+            "TaxesSurcharges": "4618",
+            "Premium": "30276",
+            "CalculatedPremium": "28450",
+            "CommissionPlanId": null,
+            "TransactionCommissionType": null,
+            "TransactionCommissionValue": "0",
+            "BillingLOB": "LIN1",
+            "LineCommissionOutputCommissionSharePlanId": null
+          },
+          "cscvledetails": {
+            "@id": "c06D04C66417947E2A58A9E7F66F276AA",
+            "PartnerSalesRepDistrict": null,
+            "PartnerSalesRepEmail": null,
+            "PartnerSalesRepID": null,
+            "PartnerSalesRepName": null,
+            "PartnerSalesRepPospCode": null,
+            "PartnerSalesRepPospRegNo": null,
+            "PartnerSalesRepRapID": null,
+            "PartnerSalesRepRegNo": null,
+            "PartnerSalesRepState": null
+          },
+          "PlanName": "Optima Secure",
+          "Tier": "1",
+          "SourceId": "DUCKCREEK",
+          "workflowflags": {
+            "@id": "w6DDAEC80E9604993A5F30C778BE39F7F",
+            "ConsentReceived": "0",
+            "NSTPCaseSentToMARS": "0",
+            "MedQuesSentToMARS": "0",
+            "ConsentSentToUser": "0",
+            "ReconsiderationApplicable": "0",
+            "ReconsiderationResponseReceived": "0",
+            "IsEffectiveDateChangedInConsentAccept": "0",
+            "IsASBA": "0",
+            "ConsentDescription": null,
+            "MedQuesResponseReceived": "0",
+            "NSTPCaseDecisionReceived": "0",
+            "ConsentSentDate": null,
+            "PaymentCollectedFlag": "1"
+          },
+          "QuoteNumber": "HE01476915Q202507",
+          "ExpirationDate": "2027-07-30",
+          "TermInDays": "730",
+          "QuoteGeneratedDate": "2026-07-15",
+          "NewExpirationDate": "2027-07-29",
+          "Endorse_Type": "Policy",
+          "PolicyPrivateTotalMember": "1",
+          "RupeePremium": "30276",
+          "OnlyConditional": null,
+          "AndConditional": " And ",
+          "PaiseOnlyConditional": " Paise Only",
+          "PremiumInWords": "Rupees Thirty Thousand Two Hundred And Seventy-Six And Zero Paise Only",
+          "LobCode": "HE",
+          "ProductCode": "2856",
+          "DepartmentCode": "28",
+          "DepartmentName": "Health",
+          "ProductDescriptionClientPage": "Optima Secure",
+          "Status": "Application",
+          "NSTP": "N",
+          "PolicyIsRenewed": "0",
+          "IsOpscheck": "0",
+          "ApproveButtonClickedDate": null,
+          "IsApproveButtonClicked": "0",
+          "QuoteApprovedDate": null,
+          "EDDApplicable": "0",
+          "IsReRateApplicable": "0",
+          "DeltaPremium": "0",
+          "IsPolicyReferAppliFromSubReasonCode": "0",
+          "PolicyOutputPriorConsentEffectiveDate": "2025-07-30",
+          "CheckPriorPremiumCounterOffer": "1",
+          "QCCompleted": "0",
+          "IsPremiumNotRefundOnCancel": "0",
+          "IsEMIScheduleFormProcessed": "0",
+          "readonlyflags": {
+            "@id": "r720A77C5909C4784A2F7034EC8791FE1",
+            "InsuredDetails": "0",
+            "CustomerID": "0",
+            "MedicalQuestions": "0",
+            "Correspondenceaddress": "0",
+            "PreviousPolicyDetails": "0",
+            "Communication": "0",
+            "NomineeandAppointeedetails": "0",
+            "Policydetails": "0",
+            "SourcingDetails": "0",
+            "GSTDetails": "0",
+            "KYCRelatedDetails": "0",
+            "NRIDetails": "0",
+            "OtherDetails": "0",
+            "CustomerProfiling": "0",
+            "AMLinformation": "0",
+            "RefundDetails": "0",
+            "Beneficiary": "0"
+          },
+          "ExpirationTime": "23:59:00.000",
+          "MasterPolicy": "0",
+          "InwardNumber": null,
+          "Transaction": "NewBusiness",
+          "TPAID": "8000000010",
+          "unifiedpolicydecision": {
+            "@id": "u58201AAE92DF485C87358F5C56119049",
+            "Decision": "Accept",
+            "PPCCode": "STP",
+            "IsProposalNSTP": "0",
+            "Description": "Accept"
+          },
+          "claimshistorydata": {
+            "@id": "cEDE71F34646C413A8A5A7729016FC5EB",
+            "body": {
+              "@id": "bF7136A1023BA49FA92B39F54AACC5CE2",
+              "PolicyList": {
+                "@id": "P37517E65BB1B4C77B4E78E19B1E0BFC8"
+              }
+            }
+          },
+          "PriorInvoiceNumber": null,
+          "IsOnlineJourney": "0",
+          "InstallmentFrequencyCaption": "Full Pay",
+          "IsGSTNotRefundOnCancel": "0",
+          "LineOfBusinessCode": "HEAL",
+          "PolicyTypePrior": null,
+          "CurrentTransactionStatus": "Not Committed",
+          "BaseSI": "500000",
+          "BaseSIPrior": "0",
+          "EDDFlag": "0",
+          "TotalPremiumPriorWorkflowActions": "30276",
+          "CounterOfferPriorPremium": "30276",
+          "policyfinaldecision": {
+            "@id": "p237542B0BADB4712B9ECDBB97F01085D",
+            "Decision": null
+          },
+          "ProposalId": null,
+          "MandateID": "23232332332"
+        },
+        "DistributionDetails": {
+          "@id": "D6CECB623490646D9BCA38190C68B293D",
+          "IMD_CODE": "200798503757",
+          "IMD_NAME": "AKSHAY KUMAR JAIN",
+          "IMD_CATEGORYCODE": "102",
+          "IMD_CATEGORYNAME": "AGENT",
+          "IMD_SUBCATEGORYCODE": "201",
+          "IMD_SUBCATEGORYNAME": "Individual Agent",
+          "PARENT_IMDCODE": null,
+          "FIRST_IMDCHILDCODE": "202128463522",
+          "IMD_TOP_VERTICAL_CODE": "101000000",
+          "IMD_MAP_VERTICAL_CODE": "101001000",
+          "IMD_MAP_VERTICAL_NAME": "AGENCY 1",
+          "IMD_THIRD_VERTICAL_CODE": "100000005",
+          "IMD_THIRD_VERTICAL_NAME": "AGENT",
+          "DC_VERTICAL_GROUP_IMD": "RBG",
+          "IMD_SUPERPARENT": "200798503757",
+          "IMD_BUSINESS_CREDIT": null,
+          "IMD_LICENCE_NO": "1203785",
+          "IMD_LICENCE_EXPIRY": "2099-05-15 00:00:00.0",
+          "IMD_CONTACT_PHONE": null,
+          "IMD_CONTACT_MOBILE": "9384743818",
+          "IMD_EMAILID": "kow919616@gmail.com",
+          "IMD_START_DATE": "2009-09-01 00:00:00.0",
+          "IMD_END_DATE": "2030-04-01 00:00:00.0",
+          "PSM_CODE": "100030",
+          "PSM_HR_REFNO": "1764",
+          "PSM_NAME": "AVINASH DWIVEDI",
+          "PSM_EMAILID": "prathamesh.dhumal@hdfcergo.co.in",
+          "PSM_VERTICALCODE": "101001000",
+          "PSM_VERTICALNAME": "AGENCY 1",
+          "PSM_TOP_VERTICALCODE": "101000000",
+          "PSM_TOP_VERTICALNAME": "RETAIL BUSINESS GROUP",
+          "SSM_CODE": "100030",
+          "SSM_HR_REFNO": "1764",
+          "SSM_NAME": "AVINASH DWIVEDI",
+          "SSM_VERTICALCODE": "101001000",
+          "SSM_VERTICALNAME": "AGENCY 1",
+          "OFFICE_CODE": "1200",
+          "OFFICE_NAME": "Ghaziabad - M. G. Tower",
+          "GL_OFFICE_CODE": "1306",
+          "OFFICE_STATE": "UPIN",
+          "OFFICE_CITY_DISTRICT": "GHAZIABAD",
+          "OFFICE_REGION": "NORTH",
+          "OFFICE_ZIP_CODE": "201001",
+          "POL_PARENT_BRANCH_CODE": "1000",
+          "OFFICE_HEGI_GSTIN_CODE": "09AABCL5045N1Z6",
+          "OFFICE_GST_STATE_CODE": "09",
+          "OFFICE_START_DATE": "2009-06-16 00:00:00.0",
+          "OFFICE_END_DATE": null,
+          "POL_USER_ID": null,
+          "POL_USER_NAME": null,
+          "CHANNEL_NO": "INTR-2856-7988586",
+          "OLD_IMD_CODE": "200798503757",
+          "TENURE": "12,24,36,48,60"
+        },
+        "policyAdmin": {
+          "@id": "pB61866454A2F4F2AB210F91CA77CABCF",
+          "PolicyManuScriptID": "OS_VM_1_0_0_0",
+          "PolicyManuScriptVersionID": "OS_VM_1_0_0_0",
+          "CommunicationsManuScriptID": "Carrier_ProductBase_Communications_1_0_0_0",
+          "UseDCTForms": "1",
+          "UseDCTNotifications": "1",
+          "UseDCTTasks": "1",
+          "UseDCTBilling": "1",
+          "UseDCTFormsAndMessages": "1",
+          "UseDCTCommissionPlans": "1",
+          "ShowReinsurance": "1",
+          "transactions": {
+            "@id": "tB79357438FE94CEEACD8ED317E0C9979",
+            "transaction": [
+              {
+                "@id": "t57F14730405647A78725BAA8C1CE6D27",
+                "reasons": {
+                  "@id": "rF74368C844EA41EF9F1347232A11D38B",
+                  "reason": {
+                    "@id": "r587D536B8D144AC4AF4B94CBFAE80F2C",
+                    "SubReasonCode": null,
+                    "TypeOfCalculation": null,
+                    "OriginatingSystem": null,
+                    "ClaimIntimationVideClaimNo": null,
+                    "DateOfIntimation": null,
+                    "PreviousPolicyNo": null,
+                    "InwardNumberInteractionNumber": null,
+                    "RefundDetails": null,
+                    "RequestType": null
+                  }
+                },
+                "PolicyManuScriptID": "OS_VM_1_0_0_0",
+                "StatusUser": "IntegrationUser",
+                "Type": "New",
+                "TypeCaption": "New Business",
+                "State": "open",
+                "Status": "Pending",
+                "EffectiveDate": "2025-07-30",
+                "ScheduleDate": null,
+                "CreatedDate": "2026-07-15T09:58:30",
+                "CreatedUser": "IntegrationUser",
+                "OriginalCharge": "0",
+                "Charge": "30276",
+                "ProRateFactor": "1",
+                "TermPremium": "30276",
+                "PriorPremium": "0",
+                "NewPremium": "30276",
+                "HistoryID": "380421",
+                "ConvertedTransactionType": "New",
+                "ProductIsReadOnly": "0",
+                "PolicyStatus": "Application",
+                "VB64_Amount_ENDT": null,
+                "TransactionDate": null,
+                "ExpirationDate": "2027-07-30",
+                "WaiveChargeCheck": null,
+                "Deposit": null,
+                "AuditPremium": null,
+                "AuditCharge": null,
+                "Auditable": "0",
+                "TDSCharge": "0"
+              }
+            ]
+          },
+          "policyAdminProcessing": {
+            "@id": "p3DFA35C612194A329844AEC1C14C890B",
+            "AdminManuScriptID": "Carrier_TransACTMaster_INT_2_10"
+          },
+          "QuoteId": "268670",
+          "UseSegmentValues": "0",
+          "PolicyID": "268670",
+          "SuspenseList": {
+            "@id": "S43FCBC7FF1DA4CCA93822046DE691F94",
+            "SuspenseRecord": [
+              {
+                "@id": "SF9E683A1584F47FDB476CC11C58EE71F",
+                "SuspenseId": "1450321",
+                "Indicator": "1",
+                "BillingAccountNumber": "IC00101673",
+                "DepositTransfer": null
+              }
+            ]
+          }
+        },
+        "POSPDetails": {
+          "@id": "PF8D628B8284C4CD59F1A138BB4BFB5AC"
+        },
+        "CurrentTransactionType": "New Business"
+      }
+    }
+  },
+  "createPaymentResponse": [
+    {
+      "session": {
+        "@id": "s0DC2CBC497524B1796CBE9F7F0A8AFB8",
+        "data": {
+          "@id": "dDA4D8748731749FF8B01ED6B7E187057",
+          "CreatePaymentResponse": {
+            "@id": "CCE15E970EB7E444287BC28CEDEB7B746",
+            "PaymentDetail": {
+              "@id": "P4FA93CD0A88947E4B2969845FDB7B07F",
+              "@xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+              "PaymentId": "152829",
+              "PaymentReference": {
+                "@xsi:nil": "true",
+                "@id": "PF98EAAF67CE34D89AFB3C0CFE7C9DD1A"
+              },
+              "PaymentBatchId": {
+                "@xsi:nil": "true",
+                "@id": "P4F361B7F5CB2418FAEB4079C30A78937"
+              },
+              "EntryDate": "2025-07-30",
+              "Amount": "30276.0000",
+              "PaymentMethodCode": "EP",
+              "PaymentMethod": "Electronic Payment",
+              "CurrencyCulture": "en-IN",
+              "CurrencyCode": "INR",
+              "PostMarkDate": {
+                "@xsi:nil": "true",
+                "@id": "P99F0CF53A47F414DBDFDC14F72504B51"
+              },
+              "EntryUserId": "umesh.b",
+              "StatusCode": "ACV",
+              "Status": "Active",
+              "PaymentMethodDetail": {
+                "@id": "PD1BAECFE897E40AD8165699B37C6B32A",
+                "ElectronicBankPayment": {
+                  "@id": "E639BD07D85EE42BAA3BA443604ABBA91",
+                  "PGName": "Razorpay",
+                  "InstrumentNumber": "AUTO-PAYMENT",
+                  "InstrumentAmount": "30276"
+                },
+                "AccountNumber": null,
+                "IFSCCode": null,
+                "DraweeBank": "BIZDIRECT",
+                "DraweeBranch": "ANDHERI",
+                "DraweeAddress": null,
+                "HouseBank": "CR_CARD_COLLECTION_6681",
+                "HouseBankCode": "265",
+                "GLCode": "252201",
+                "BusinessLocation": "Ghaziabad - M. G. Tower",
+                "BusinessLocationCode": "1200",
+                "Lob": "Health",
+                "BusinessLocationAddress1": "GHAZIABAD - 1ST FLOOR, D - 1,",
+                "BusinessLocationAddress2": "M. G. TOWER, RDC RAJNAGAR",
+                "BusinessLocationAddress": null,
+                "GLLocationCode": "1306",
+                "Remarks": "HE01476915Q202507",
+                "QuoteNumber": "HE01476915Q202507"
+              },
+              "ProcessingOrgUnitCode": "9999",
+              "PaymentLockingTS": "AAAAAAK/8R0=",
+              "PaymentExtendedData": {
+                "@id": "P7C86112CB7A147459E519786FC8A6233",
+                "UTR": null,
+                "ExternalPID": null,
+                "ExternalUserName": null,
+                "IntermediaryName": "AKSHAY KUMAR JAIN",
+                "IntermediaryCode": "200798503757",
+                "Vertical": "101000000",
+                "Sub-vertical": null,
+                "PrimarySM": "100030",
+                "SecondarySM": "100030",
+                "InwardNumber": null,
+                "GLCode": "252201",
+                "HouseBankCode": "265",
+                "PaymentMethod": null,
+                "GCPartyID": null,
+                "GCPartyName": null,
+                "SourceSystem": "PORTAL",
+                "Status": {
+                  "@id": "SC6058D472DD5438AB8DEFD66DE1028BC",
+                  "AcceptedStatus": "Y",
+                  "AcceptedTimestamp": "2026-07-15",
+                  "AcceptedByUser": null,
+                  "DepositedStatus": "Y",
+                  "DepositedTimestamp": "2026-07-15",
+                  "DepositedByUser": null,
+                  "ConfirmedStatus": "Y",
+                  "ConfirmedTimestamp": "2026-07-15",
+                  "ConfirmedByUser": null,
+                  "CurrentStatus": "Confirmed"
+                }
+              },
+              "AccountLockingTS": {
+                "@xsi:nil": "true",
+                "@id": "ADE52199A8FE24A8793BBB9D90DFDD039"
+              },
+              "ReversalReason": {
+                "@xsi:nil": "true",
+                "@id": "R234F10A3E72C41F1AF222BBD5D278F57"
+              },
+              "ReversalReasonCode": {
+                "@xsi:nil": "true",
+                "@id": "R25B3A57A237B4B498548B006B3033D33"
+              },
+              "RejectionReason": {
+                "@xsi:nil": "true",
+                "@id": "R11CCFAE7AF4A438486CC39C46D26218A"
+              },
+              "RejectionDescription": {
+                "@xsi:nil": "true",
+                "@id": "R85FD767635DD43A0B9C9CEB8AF89E6F3"
+              },
+              "ReversalDate": {
+                "@xsi:nil": "true",
+                "@id": "RED04E10A25EF43C182B89CEAC1577250"
+              },
+              "ReversalUserId": {
+                "@xsi:nil": "true",
+                "@id": "R025ABB6BF22A465FA15AE7DF72F136B8"
+              },
+              "PaymentAllocations": {
+                "@id": "PCE2AB3FBF8DB4771B43DB2CA8C27A9F5",
+                "PaymentAllocation": {
+                  "@id": "P1AA86CA0A7BF4A6CBBE777E4D77DD642",
+                  "AccountReference": "IC00101673",
+                  "CurrencyCulture": "en-IN",
+                  "CurrencyCode": "INR",
+                  "PaymentAllocationId": "9551715",
+                  "PaymentId": "152829",
+                  "DestinationId": "1450321",
+                  "AllocationType": "Suspense",
+                  "AllocationTypeCode": "SP",
+                  "ClaimsReference": {
+                    "@xsi:nil": "true",
+                    "@id": "C43338C8484C947D88265898924D489D5"
+                  },
+                  "DateOfLoss": {
+                    "@xsi:nil": "true",
+                    "@id": "DE0A8C6FF555E46AA9BFFAC1F633FCD5D"
+                  },
+                  "Direction": "Suspense",
+                  "AvailableForSuspense": "N",
+                  "AllocationDate": "2026-07-15",
+                  "ExpirationDate": {
+                    "@xsi:nil": "true",
+                    "@id": "E2B2F12D8EED64DF1BD5A35537467A469"
+                  },
+                  "Amount": "30276.0000",
+                  "AllocationStatus": "Active",
+                  "AllocationClass": "Payment",
+                  "AllocationUserId": "IntegrationUser",
+                  "AllocationReasonCode": "SUSP",
+                  "AccountId": "101689",
+                  "PolicyTermId": {
+                    "@xsi:nil": "true",
+                    "@id": "PFBFAF4FB139D44D3B47415F85CDFCAE2"
+                  },
+                  "IssueCompany": {
+                    "@xsi:nil": "true",
+                    "@id": "ICF8591E1FADE4F3392CCD7FDFD788CB8"
+                  },
+                  "PolicyIssueSystemCode": {
+                    "@xsi:nil": "true",
+                    "@id": "PDAF5E767D4494F4F9E8F73046D340C7B"
+                  },
+                  "PolicyReference": {
+                    "@xsi:nil": "true",
+                    "@id": "P7D70A2134ECC48E2B5F9A6163FF3E63B"
+                  },
+                  "PolicyTermStatusCode": {
+                    "@xsi:nil": "true",
+                    "@id": "P82E9FFED49FC451C9B7D3A58FADEF72C"
+                  },
+                  "PolicyStateCode": {
+                    "@xsi:nil": "true",
+                    "@id": "PCE2DC389F6154EC58CD52A52FD550441"
+                  },
+                  "PolicyTermConfig": {
+                    "@xsi:nil": "true",
+                    "@id": "P0B33CD3BD2944E378640F7A7DAC7BEA5"
+                  },
+                  "PolicyTermEffectiveDate": {
+                    "@xsi:nil": "true",
+                    "@id": "P24DB594999304903AA07B35FF7D168F0"
+                  },
+                  "AccountConfig": {
+                    "@id": "AD2E4BE7C534F455A97CC5A51B1E0597A",
+                    "AccountConfig": {
+                      "@id": "AB435FD3B23624250A0729CDB66D0DA37",
+                      "Disbursements": {
+                        "@id": "DB46F090C157648FC9E81B61E60274120",
+                        "@DisbMthd": "CK",
+                        "@HoldDisbInd": "1",
+                        "@RefundToSource": "1",
+                        "@AutomaticDisbursementAuthorizationLimit": "0",
+                        "@DisbursementPlan": "0"
+                      },
+                      "Scheduling": {
+                        "@id": "SFF5B8D05460746C8AB4311903AF2E511",
+                        "@BillPrdOffset": "6",
+                        "@OCBAllow": "0",
+                        "@Freq": "MONTHLY",
+                        "@EFTDrawOffset": "14",
+                        "@LateEnterStgy": "C",
+                        "@EFTPreNote": "0",
+                        "@DFPolMSId": "Billing_PolicyPlanSetup_DirectBase_1_0_0_0",
+                        "@PlanDesc": "Paper Invoices (No Service Charge)",
+                        "@PlanCode": "HEGI_ACT_A1",
+                        "@EIOffsetDays": "0",
+                        "@BlackOutDatesCalendar": "BusinessCalendar",
+                        "@SchdOverridePlanCode": "SOP1",
+                        "@ManualPremWriteOffReallocation": ""
+                      },
+                      "Suspense": {
+                        "@id": "S6E29FCEC15FB48F3B6547180C0DBFCA0",
+                        "@AutoProcHoldCWA": "30",
+                        "@AutoDisbMaxAmt": "99999999",
+                        "@AutoDisbMinAmt": "0",
+                        "@AutoProcHold": "5",
+                        "@AutoProcIndicator": "1"
+                      },
+                      "Payment": {
+                        "@id": "P41DFD624F6E141BA84B37DCA91432DBB",
+                        "@NSFChgAct": "N",
+                        "@NSFChgAmt": "6",
+                        "@RevAdjRsn": "CM",
+                        "@XSAlloc": "S",
+                        "@GrNetInd": "G",
+                        "@DaysOffsetUpdatePendingDraws": "0",
+                        "@LockboxMatchExactAmount": "0"
+                      },
+                      "Invoice": {
+                        "@id": "I78E4E1272E304D75A93A24495FAFFCC5",
+                        "@LineTypeRollup": "1",
+                        "@AccountRollup": "1",
+                        "@PolicyRollup": "1",
+                        "@ReceivableTypeRollup": "1",
+                        "@ReceivableSubTypeRollup": "0",
+                        "@TransactionTypeRollup": "0",
+                        "@CoverageRollup": "0",
+                        "@UnitRollup": "0",
+                        "@AggregationRollup": "0",
+                        "@CommissionRollup": "0",
+                        "@BillItemRollup": "0",
+                        "@FormMS": "Billing_InvoiceForm_INT_1_0_0_0",
+                        "@InvMthd": "PA",
+                        "@EFTRepCt": "0",
+                        "@EFTRepDays": "2",
+                        "@EFTSvcChgAmt": "0",
+                        "@EFTSvcChgAct": "N",
+                        "@PASvcChgAmt": "0",
+                        "@PASvcChgAct": "N",
+                        "@PAInvThreshAmt": "5",
+                        "@EFTInvThreshAmt": "0.01",
+                        "@PrintJob": "InvoicePrint",
+                        "@PASvcChgPct": "0",
+                        "@EFTSvcChgPct": "0",
+                        "@SvcChgMinAmt": "0",
+                        "@SvcChgMaxAmt": "9999999",
+                        "@ChgNotThresh": "0.01",
+                        "@EFTFrmReq": "1",
+                        "@UseProjectedServiceCharge": "1",
+                        "@DebitChangeNoticeManuScriptId": "Carrier_Billing_Debit_Change_Notice_1_0_0_0",
+                        "@DebitChangeNoticeGenerateField": "DebitChangeNoticePrivate.Generate",
+                        "@IncludePCN": "1",
+                        "@ElectronicInvoice": "0",
+                        "@EISvcChgAmt": "0",
+                        "@EISvcChgAct": "",
+                        "@EISvcChgPct": "0",
+                        "@EInvThreshAmt": "0",
+                        "@InvoiceTolerance": "0",
+                        "GenerateDetailedInvoice": "1",
+                        "PaperInvoiceServiceChargeExclusions": {
+                          "@id": "PE329D3D54D0949C5A1095AB8AC2B22B5"
+                        },
+                        "EFTInvoiceServiceChargeExclusions": {
+                          "@id": "E55FF7C9A6A3945F5B3BBDE3D38FECA2A",
+                          "EFTSCX": [
+                            {
+                              "@id": "E9B31279D99DC40DEA4DC11837828F4FB",
+                              "ReceivableSubType": "*",
+                              "ReceivableType": "CH",
+                              "TransactionType": "*",
+                              "InvoiceLineType": "*"
+                            },
+                            {
+                              "@id": "E1C2D85D3A5A74237B6352AC3E4B17316",
+                              "ReceivableSubType": "*",
+                              "ReceivableType": "*",
+                              "TransactionType": "*",
+                              "InvoiceLineType": "PIPR"
+                            },
+                            {
+                              "@id": "E5A54840974BD402499DAE4BA86C0026A",
+                              "ReceivableSubType": "*",
+                              "ReceivableType": "*",
+                              "TransactionType": "*",
+                              "InvoiceLineType": "PDPR"
+                            },
+                            {
+                              "@id": "EFF62768D72D94918AEAC501360804BE2",
+                              "@name": "AccountCharges",
+                              "InvoiceLineType": "*",
+                              "ReceivableSubType": "*",
+                              "ReceivableType": "CH",
+                              "TransactionType": "*"
+                            }
+                          ]
+                        },
+                        "ElectronicInvoiceServiceChargeExclusions": {
+                          "@id": "E163E3DBB4E494AFE802A6915CA921D97"
+                        }
+                      },
+                      "AllocationPriorities": {
+                        "@id": "A821F709BFF4844C0BA088BA30A3D8CF1",
+                        "AP": [
+                          {
+                            "@id": "AC6D122CBF5F24807BE7BCAEB9914184B",
+                            "@Pty": "20",
+                            "@Rec": "COMM"
+                          },
+                          {
+                            "@id": "A7C4FA32FE6B645178A23151AD1EF218E",
+                            "@Pty": "20",
+                            "@Rec": "DBRB"
+                          },
+                          {
+                            "@id": "A98BA77FC163F4A9C89D6241F9A4D4786",
+                            "@Pty": "20",
+                            "@Rec": "L"
+                          },
+                          {
+                            "@id": "A42C463DD45B943B4BCF3CF1AEC9781F8",
+                            "@Pty": "20",
+                            "@Rec": "N"
+                          },
+                          {
+                            "@id": "AD53EFA2AE6E547BB96E4708252D94A67",
+                            "@Pty": "20",
+                            "@Rec": "REIN"
+                          },
+                          {
+                            "@id": "A230A5EFFB50B44CAA04D6F4D2D4367F0",
+                            "@Pty": "20",
+                            "@Rec": "RREV"
+                          },
+                          {
+                            "@id": "A44E0FB294001482087647E3F58BD59DD",
+                            "@Pty": "20",
+                            "@Rec": "S"
+                          }
+                        ]
+                      },
+                      "FollowUp": {
+                        "@id": "F6E64B5975F5042EF9BA05C70E3E38A19",
+                        "LateCharge": {
+                          "@id": "LAB6FA4903E304B25B2EB7E7DFF961692",
+                          "@PlanCode": "LTCH_HEGI"
+                        },
+                        "ReminderNotice": {
+                          "@id": "R062DC74DCFEC4D429C9A3FDF8845F0CB",
+                          "@PlanCode": "RMDR_HEGI"
+                        }
+                      }
+                    }
+                  },
+                  "PaymentAllocationLockingTS": "AAAAAAK/8SE=",
+                  "InstallmentDate": {
+                    "@xsi:nil": "true",
+                    "@id": "I80D8004EEFCD46F681661F1AE3FCA0D4"
+                  },
+                  "ReceivableTypeCode": {
+                    "@xsi:nil": "true",
+                    "@id": "RC46658CC03894947BD7663793C997CEE"
+                  }
+                }
+              },
+              "ResponseInfo": {
+                "@id": "RBB3A0A79BD9347C080462CD0381D81C8",
+                "ReturnCode": "0",
+                "NotificationResponse": null
+              }
+            }
+          }
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "PaymentRequest": {
+    "CreatePaymentRequest": [
+      {
+        "PayorPartyId": "08DEBFA6E22BECE3",
+        "PaymentMethodCode": "EP",
+        "InstrumentNumber": "AUTO-PAYMENT",
+        "InstrumentDate": "2025-07-30",
+        "Instrumentamount": "30276",
+        "PaymentSequeceId": "1",
+        "PGName": "Razorpay",
+        "MandateId": "23232332332",
+        "EntryUserId": "umesh.b"
+      }
+    ],
+    "Lob": "Health",
+    "QuoteId": "268670",
+    "QuoteNumber": "HE01476915Q202507",
+    "SourceSystem": "PORTAL",
+    "Remarks": "HE01476915Q202507",
+    "PaymentCollected": 1
+  }
+}
