@@ -262,7 +262,13 @@ def build_payload(data):
         current_country = "United Arab Emirates"
 
     account_name = data.get("name", "SAKUNTHALA P").strip()
-    account_dob = data.get("dob", "1987-09-07")
+    account_dob = (
+    data.get(
+        "DOBAsPerPehchaan"
+    )
+    or data.get("dob")
+    or "1987-09-07"
+)
     account_gender = proposer_gender
     account_salutation = data.get(
         "salutation",
@@ -290,7 +296,10 @@ def build_payload(data):
             member.update({
                 "IsProposerInsured": "1",
                 "RelationshipWithProposer": "Self",
-                "InsuredName": account_name.replace(" ", ""),
+                "InsuredName": data.get(
+                    "InsuredName",
+                    account_name
+                ),
                 "MemberDOB": account_dob,
                 "Gender": account_gender,
                 "Salutation": account_salutation,
@@ -458,8 +467,8 @@ def build_payload(data):
                     },
                     "Salutation": account_salutation,
                     "NameAsPerPehchaanID": data.get(
-                        "name_as_per_pehchaan", normalized_name
-                    ),
+                        "NameAsPerPehchaanID", normalized_name
+                    ) or account_name,
                     "OtherIndustryType": data.get("other_industry_type", ""),
                     "DateOfBirth": account_dob,
                     "PehchaanIDStatus": data.get(
@@ -498,7 +507,7 @@ def build_payload(data):
                         "BranchName": data.get(
                             "branch", "ERNAKULAMCOCHIN"
                         ),
-                        "ChequeAmount": data.get("cheque_amount"),
+                        "ChequeAmount": data.get("cheque_amount") or "999999",
                         "NameAsInBankAccount": data.get(
                             "bank_account_name", normalized_name
                         ),
@@ -543,15 +552,15 @@ def build_payload(data):
                         },
                     },
                     "IndustryType": data.get("industry_type", ""),
-                    "FirstName": first_name,
+                    "FirstName": data.get("FirstName",first_name),
                     "PehchaanID": data.get(
-                        "pehchaan_id", "UC4VNKAALM"
+                        "PehchaanID", "UC4VNKAALM"
                     ),
                     "PartyType": data.get("party_type", "P"),
                     "TypeOfBusiness": data.get(
                         "type_of_business", "Intermediary"
                     ),
-                    "PANNumber": data.get("pan", "CYUPS5288Q"),
+                    "PANNumber": data.get("PANNumber", "CYUPS5288Q"),
                     "ResidentialStatus": residential_status,
                     "MiddleName": data.get("middle_name", ""),
                     "InvestableAssets": data.get(
@@ -1594,6 +1603,8 @@ def _bulk_member_overrides(
     ages,
     effective_date,
     sum_insured,
+    row_dob_as_per_pehchaan=None,
+
 ):
     members = []
 
@@ -1603,14 +1614,22 @@ def _bulk_member_overrides(
         if index == 0:
             gender = "M"
             salutation = "MR"
+        
+        member_dob = _bulk_dob_from_age(
+            ages[index],
+            effective_date,
+        )
+
+        if (
+            relation == "Self"
+            and row_dob_as_per_pehchaan
+        ): member_dob = row_dob_as_per_pehchaan
 
         members.append({
             "SequenceID": str(index + 1),
             "RelationshipWithProposer": relation,
-            "MemberDOB": _bulk_dob_from_age(
-                ages[index],
-                effective_date,
-            ),
+
+            "MemberDOB": member_dob,
             "Gender": gender,
             "Salutation": salutation,
             "SumInsured": str(sum_insured),
@@ -1687,6 +1706,43 @@ def _bulk_row_to_input(row):
     )
 
     return {
+        "NameAsPerPehchaanID":
+            _bulk_text(
+                row.get(
+                    "NameAsPerPehchaanID / InsuredName , FirstName"
+                )
+            ),
+
+        "FirstName":
+            _bulk_text(
+                row.get(
+                    "NameAsPerPehchaanID / InsuredName , FirstName"
+                )
+            ),
+
+        "InsuredName":
+            _bulk_text(
+                row.get(
+                    "NameAsPerPehchaanID / InsuredName , FirstName"
+                )
+            ),
+
+        "PehchaanID":
+            _bulk_text(
+                row.get("PehchaanID ")
+            ),
+
+        "PANNumber":
+            _bulk_text(
+                row.get("PANNumber ")
+            ),
+
+        "DOBAsPerPehchaan":
+            _bulk_date(
+                row.get(
+                    "DOBAsPerPehchaan ,MDOBember"
+                )
+            ),
         "policy_type": _bulk_policy_type(
             row.get("Policy Type")
         ),
@@ -1699,6 +1755,12 @@ def _bulk_row_to_input(row):
             ages,
             effective_date,
             sum_insured,
+            row_dob_as_per_pehchaan=
+            _bulk_date(
+                row.get(
+                    "DOBAsPerPehchaan ,MDOBember"
+                )
+            )
         ),
         "sum_insured": str(sum_insured),
         "plan": plan,
