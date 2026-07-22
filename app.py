@@ -1729,12 +1729,12 @@ def _bulk_row_to_input(row):
 
         "PehchaanID":
             _bulk_text(
-                row.get("PehchaanID ")
+                row.get("PehchaanID")
             ),
 
         "PANNumber":
             _bulk_text(
-                row.get("PANNumber ")
+                row.get("PANNumber")
             ),
 
         "DOBAsPerPehchaan":
